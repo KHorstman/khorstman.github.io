@@ -2831,27 +2831,27 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(6n - 5):before {
-				background-color: #ea68aa;
+				background-color: #EB848B;
 			}
 
 			.tiles article:nth-child(6n - 4):before {
-				background-color: #bb3377;
+				background-color: #B26177;
 			}
 
 			.tiles article:nth-child(6n - 3):before {
-				background-color: #8f65bb;
+				background-color: #522B48;
 			}
 
 			.tiles article:nth-child(6n - 2):before {
-				background-color: #572e83;
+				background-color: #344F8F;
 			}
 
 			.tiles article:nth-child(6n - 1):before {
-				background-color: #3962cb;
+				background-color: #063D6F;
 			}
 
 			.tiles article:nth-child(6n):before {
-				background-color: #264491;
+				background-color: #0F122C;
 			}
 
 		@media screen and (max-width: 1280px) {
