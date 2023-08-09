@@ -160,11 +160,11 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #9bf1ff !important;
+			color: #B56576 !important;
 		}
 
 		a:active {
-			color: #53e3fb !important;
+			color: #B56576 !important;
 		}
 
 	strong, b {
@@ -1941,8 +1941,8 @@ input, select, textarea {
 		input[type="url"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #9bf1ff;
-			box-shadow: 0 0 0 2px #9bf1ff;
+			border-color: #B56576;
+			box-shadow: 0 0 0 2px #B56576;
 		}
 
 	select {
@@ -2041,14 +2041,14 @@ input, select, textarea {
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
 			background: #ffffff;
-			border-color: #9bf1ff;
+			border-color: #B56576;
 			content: '\f00c';
 			color: #242943;
 		}
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			box-shadow: 0 0 0 2px #9bf1ff;
+			box-shadow: 0 0 0 2px #B56576;
 		}
 
 	input[type="radio"] + label:before {
@@ -2151,11 +2151,11 @@ input, select, textarea {
 	}
 
 	a.icon.alt:hover:before {
-		background-color: #6fc3df;
+		background-color: #B56576;
 	}
 
 	a.icon.alt:active:before {
-		background-color: #37a6cb;
+		background-color: #B56576;
 	}
 
 /* Image */
@@ -2402,12 +2402,12 @@ input, select, textarea {
 				}
 
 					ul.pagination li > .page.active:hover {
-						background-color: #9bf1ff;
+						background-color: #B56576;
 						color: #242943 !important;
 					}
 
 					ul.pagination li > .page.active:active {
-						background-color: #53e3fb;
+						background-color: #B56576;
 					}
 
 			ul.pagination li:first-child {
@@ -2541,8 +2541,8 @@ input, select, textarea {
 		button:active,
 		.button:hover,
 		.button:active {
-			box-shadow: inset 0 0 0 2px #9bf1ff;
-			color: #9bf1ff;
+			box-shadow: inset 0 0 0 2px #B56576;
+			color: #B56576;
 		}
 
 		input[type="submit"]:active,
@@ -2551,8 +2551,8 @@ input, select, textarea {
 		button:active,
 		.button:active {
 			background-color: rgba(155, 241, 255, 0.1);
-			box-shadow: inset 0 0 0 2px #53e3fb;
-			color: #53e3fb;
+			box-shadow: inset 0 0 0 2px #B56576;
+			color: #B56576;
 		}
 
 		input[type="submit"].icon:before,
@@ -2685,7 +2685,7 @@ input, select, textarea {
 			button.primary:active,
 			.button.primary:hover,
 			.button.primary:active {
-				background-color: #9bf1ff;
+				background-color: #B56576;
 				color: #242943 !important;
 			}
 
@@ -2694,7 +2694,7 @@ input, select, textarea {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
-				background-color: #53e3fb;
+				background-color: #B56576;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2851,7 +2851,7 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(6n):before {
-				background-color: #333855;
+				background-color: #333856;
 			}
 
 		@media screen and (max-width: 1280px) {
@@ -3153,11 +3153,11 @@ input, select, textarea {
 			}
 
 			#header .logo:hover strong {
-				background-color: #9bf1ff;
+				background-color: #B56576;
 			}
 
 			#header .logo:active strong {
-				background-color: #53e3fb;
+				background-color: #B56576;
 			}
 
 		#header nav {
@@ -3259,27 +3259,27 @@ input, select, textarea {
 		}
 
 			#header.alt.style1 .logo strong {
-				color: #ea68aa;
+				color: #EAAC8B;
 			}
 
 			#header.alt.style2 .logo strong {
-				color: #bb3377;
+				color: #E56B6F;
 			}
 
 			#header.alt.style3 .logo strong {
-				color: #8f65bb;
+				color: #B56576;
 			}
 
 			#header.alt.style4 .logo strong {
-				color: #572e83;
+				color: #6D597A;
 			}
 
 			#header.alt.style5 .logo strong {
-				color: #3962cb;
+				color: #355070;
 			}
 
 			#header.alt.style6 .logo strong {
-				color: #264491;
+				color: #333856;
 			}
 
 		body.is-preload #header.alt {
@@ -3491,27 +3491,27 @@ input, select, textarea {
 			}
 
 		#banner.style1:after {
-			background-color: #ea68aa;
+			background-color: #EAAC8B;
 		}
 
 		#banner.style2:after {
-			background-color: #bb3377;
+			background-color: #E56B6F;
 		}
 
 		#banner.style3:after {
-			background-color: #8f65bb;
+			background-color: #B56576;
 		}
 
 		#banner.style4:after {
-			background-color: #572e83;
+			background-color: #6D597A;
 		}
 
 		#banner.style5:after {
-			background-color: #3962cb;
+			background-color: #355070;
 		}
 
 		#banner.style6:after {
-			background-color: #264491;
+			background-color: #333856;
 		}
 
 		body.is-preload #banner:after {
