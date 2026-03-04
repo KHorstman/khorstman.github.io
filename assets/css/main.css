@@ -3969,3 +3969,20 @@ input, select, textarea {
 	height: 100%;
 	border: 0;
 }
+
+/* Fixed Aspect Ratio for Research Images */
+.image.fixed-ratio {
+    position: relative;
+    width: 100%;
+    padding-bottom: 66.66%; /* 3:2 ratio (change if desired) */
+    overflow: hidden;
+}
+
+.image.fixed-ratio img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* crops instead of stretching */
+}
