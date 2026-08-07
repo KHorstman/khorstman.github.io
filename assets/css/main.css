@@ -3380,7 +3380,7 @@ input, select, textarea {
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		background-image: url("../../images/banner.jpg");
+		background-image: radial-gradient(ellipse at 50% 100%, rgba(155, 148, 168, 0.5) 0%, rgba(155, 148, 168, 0) 60%), linear-gradient(180deg, #0b0f28 0%, #1a2350 38%, #242943 68%, #3c3b56 100%);
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3434,11 +3434,39 @@ input, select, textarea {
 			padding: 0 !important;
 			position: relative;
 			z-index: 2;
+			height: 100%;
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			-moz-flex-direction: column;
+			-webkit-flex-direction: column;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			-moz-justify-content: center;
+			-webkit-justify-content: center;
+			-ms-justify-content: center;
+			justify-content: center;
 		}
 
 			#banner > .inner .image {
-				display: none;
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				pointer-events: none;
 			}
+
+				#banner > .inner .image img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					object-position: center;
+					opacity: 0.6;
+				}
 
 			#banner > .inner header {
 				width: auto;

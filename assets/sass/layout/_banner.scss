@@ -8,7 +8,9 @@
 
 	#banner {
 		@include vendor('align-items', 'center');
-		@include vendor('background-image', 'url("../../images/banner.jpg")');
+		// Pure CSS gradient (was a low-res banner.jpg that pixelated when
+		// stretched full-bleed on large screens) — infinitely scalable, no image weight.
+		background-image: radial-gradient(ellipse at 50% 100%, rgba(155, 148, 168, 0.5) 0%, rgba(155, 148, 168, 0) 60%), linear-gradient(180deg, #0b0f28 0%, #1a2350 38%, #242943 68%, #3c3b56 100%);
 		@include vendor('display', 'flex');
 		@include padding(4em, 0, (2em, 0, 0, 0));
 		background-attachment: fixed;
@@ -54,9 +56,33 @@
 			padding: 0 !important;
 			position: relative;
 			z-index: 2;
+			// Stretch to the full banner height so the decorative .image layer
+			// (below) has a real box to fill, then re-center its own content.
+			height: 100%;
+			@include vendor('display', 'flex');
+			@include vendor('flex-direction', 'column');
+			@include vendor('justify-content', 'center');
 
+			// Line-art overlay (orbit/coronagraph/RV/frequency-comb SVG). Sits
+			// above the accent-color tint (#banner:after, z-index 1) since this
+			// is nested in .inner (z-index 2), so it isn't washed out by it.
 			.image {
-				display: none;
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				pointer-events: none;
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					object-position: center;
+					opacity: 0.6;
+				}
 			}
 
 			header {
