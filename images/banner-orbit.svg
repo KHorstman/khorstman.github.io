@@ -1,195 +1,117 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 640" preserveAspectRatio="xMidYMid slice">
-<g id="comb">
-<line x1="30.0" y1="604.0" x2="30.0" y2="567.4" stroke="#FFFFFF" stroke-width="1" opacity="0.23"/>
-<line x1="43.5" y1="604.0" x2="43.5" y2="570.4" stroke="#FFFFFF" stroke-width="1" opacity="0.21"/>
-<line x1="57.0" y1="604.0" x2="57.0" y2="575.3" stroke="#FFFFFF" stroke-width="1" opacity="0.18"/>
-<line x1="70.5" y1="604.0" x2="70.5" y2="594.5" stroke="#FFFFFF" stroke-width="1" opacity="0.15"/>
-<line x1="84.0" y1="604.0" x2="84.0" y2="575.1" stroke="#FFFFFF" stroke-width="1" opacity="0.11"/>
-<line x1="97.5" y1="604.0" x2="97.5" y2="567.7" stroke="#FFFFFF" stroke-width="1" opacity="0.13"/>
-<line x1="111.0" y1="604.0" x2="111.0" y2="570.5" stroke="#FFFFFF" stroke-width="1" opacity="0.17"/>
-<line x1="124.5" y1="604.0" x2="124.5" y2="574.6" stroke="#FFFFFF" stroke-width="1" opacity="0.20"/>
-<line x1="138.0" y1="604.0" x2="138.0" y2="593.7" stroke="#FFFFFF" stroke-width="1" opacity="0.22"/>
-<line x1="151.5" y1="604.0" x2="151.5" y2="578.4" stroke="#FFFFFF" stroke-width="1" opacity="0.24"/>
-<line x1="165.0" y1="604.0" x2="165.0" y2="571.7" stroke="#FFFFFF" stroke-width="1" opacity="0.24"/>
-<line x1="178.5" y1="604.0" x2="178.5" y2="569.5" stroke="#FFFFFF" stroke-width="1" opacity="0.23"/>
-<line x1="192.0" y1="604.0" x2="192.0" y2="573.4" stroke="#FFFFFF" stroke-width="1" opacity="0.21"/>
-<line x1="205.5" y1="604.0" x2="205.5" y2="583.1" stroke="#FFFFFF" stroke-width="1" opacity="0.19"/>
-<line x1="219.0" y1="604.0" x2="219.0" y2="583.9" stroke="#FFFFFF" stroke-width="1" opacity="0.15"/>
-<line x1="232.5" y1="604.0" x2="232.5" y2="571.4" stroke="#FFFFFF" stroke-width="1" opacity="0.11"/>
-<line x1="246.0" y1="604.0" x2="246.0" y2="563.8" stroke="#FFFFFF" stroke-width="1" opacity="0.13"/>
-<line x1="259.5" y1="604.0" x2="259.5" y2="566.3" stroke="#FFFFFF" stroke-width="1" opacity="0.16"/>
-<line x1="273.0" y1="604.0" x2="273.0" y2="583.0" stroke="#FFFFFF" stroke-width="1" opacity="0.20"/>
-<line x1="286.5" y1="604.0" x2="286.5" y2="583.7" stroke="#FFFFFF" stroke-width="1" opacity="0.22"/>
-<line x1="300.0" y1="604.0" x2="300.0" y2="565.3" stroke="#FFFFFF" stroke-width="1" opacity="0.24"/>
-<line x1="313.5" y1="604.0" x2="313.5" y2="569.5" stroke="#FFFFFF" stroke-width="1" opacity="0.24"/>
-<line x1="327.0" y1="604.0" x2="327.0" y2="565.6" stroke="#FFFFFF" stroke-width="1" opacity="0.23"/>
-<line x1="340.5" y1="604.0" x2="340.5" y2="583.3" stroke="#FFFFFF" stroke-width="1" opacity="0.22"/>
-<line x1="354.0" y1="604.0" x2="354.0" y2="588.8" stroke="#FFFFFF" stroke-width="1" opacity="0.19"/>
-<line x1="367.5" y1="604.0" x2="367.5" y2="575.6" stroke="#FFFFFF" stroke-width="1" opacity="0.16"/>
-<line x1="381.0" y1="604.0" x2="381.0" y2="567.1" stroke="#FFFFFF" stroke-width="1" opacity="0.12"/>
-<line x1="394.5" y1="604.0" x2="394.5" y2="564.7" stroke="#FFFFFF" stroke-width="1" opacity="0.12"/>
-<line x1="408.0" y1="604.0" x2="408.0" y2="582.0" stroke="#FFFFFF" stroke-width="1" opacity="0.16"/>
-<line x1="421.5" y1="604.0" x2="421.5" y2="587.1" stroke="#FFFFFF" stroke-width="1" opacity="0.19"/>
-<line x1="435.0" y1="604.0" x2="435.0" y2="572.4" stroke="#FFFFFF" stroke-width="1" opacity="0.22"/>
-<line x1="448.5" y1="604.0" x2="448.5" y2="567.0" stroke="#FFFFFF" stroke-width="1" opacity="0.23"/>
-<line x1="462.0" y1="604.0" x2="462.0" y2="566.3" stroke="#FFFFFF" stroke-width="1" opacity="0.24"/>
-<line x1="475.5" y1="604.0" x2="475.5" y2="580.8" stroke="#FFFFFF" stroke-width="1" opacity="0.23"/>
-<line x1="489.0" y1="604.0" x2="489.0" y2="595.0" stroke="#FFFFFF" stroke-width="1" opacity="0.22"/>
-<line x1="502.5" y1="604.0" x2="502.5" y2="578.8" stroke="#FFFFFF" stroke-width="1" opacity="0.19"/>
-<line x1="516.0" y1="604.0" x2="516.0" y2="564.7" stroke="#FFFFFF" stroke-width="1" opacity="0.16"/>
-<line x1="529.5" y1="604.0" x2="529.5" y2="566.6" stroke="#FFFFFF" stroke-width="1" opacity="0.12"/>
-<line x1="543.0" y1="604.0" x2="543.0" y2="576.2" stroke="#FFFFFF" stroke-width="1" opacity="0.12"/>
-<line x1="556.5" y1="604.0" x2="556.5" y2="587.8" stroke="#FFFFFF" stroke-width="1" opacity="0.16"/>
-<line x1="570.0" y1="604.0" x2="570.0" y2="578.6" stroke="#FFFFFF" stroke-width="1" opacity="0.19"/>
-<line x1="583.5" y1="604.0" x2="583.5" y2="569.5" stroke="#FFFFFF" stroke-width="1" opacity="0.22"/>
-<line x1="597.0" y1="604.0" x2="597.0" y2="562.4" stroke="#FFFFFF" stroke-width="1" opacity="0.23"/>
-<line x1="610.5" y1="604.0" x2="610.5" y2="570.3" stroke="#FFFFFF" stroke-width="1" opacity="0.24"/>
-<line x1="624.0" y1="604.0" x2="624.0" y2="588.5" stroke="#FFFFFF" stroke-width="1" opacity="0.24"/>
-<line x1="637.5" y1="604.0" x2="637.5" y2="579.8" stroke="#FFFFFF" stroke-width="1" opacity="0.22"/>
-<line x1="651.0" y1="604.0" x2="651.0" y2="568.6" stroke="#FFFFFF" stroke-width="1" opacity="0.19"/>
-<line x1="664.5" y1="604.0" x2="664.5" y2="561.3" stroke="#FFFFFF" stroke-width="1" opacity="0.16"/>
-<line x1="678.0" y1="604.0" x2="678.0" y2="568.2" stroke="#FFFFFF" stroke-width="1" opacity="0.12"/>
-<line x1="691.5" y1="604.0" x2="691.5" y2="585.5" stroke="#FFFFFF" stroke-width="1" opacity="0.12"/>
-<line x1="705.0" y1="604.0" x2="705.0" y2="578.3" stroke="#FFFFFF" stroke-width="1" opacity="0.15"/>
-<line x1="718.5" y1="604.0" x2="718.5" y2="574.2" stroke="#FFFFFF" stroke-width="1" opacity="0.19"/>
-<line x1="732.0" y1="604.0" x2="732.0" y2="565.8" stroke="#FFFFFF" stroke-width="1" opacity="0.22"/>
-<line x1="745.5" y1="604.0" x2="745.5" y2="566.4" stroke="#FFFFFF" stroke-width="1" opacity="0.23"/>
-<line x1="759.0" y1="604.0" x2="759.0" y2="584.3" stroke="#FFFFFF" stroke-width="1" opacity="0.24"/>
-<line x1="772.5" y1="604.0" x2="772.5" y2="585.8" stroke="#FFFFFF" stroke-width="1" opacity="0.24"/>
-<line x1="786.0" y1="604.0" x2="786.0" y2="576.7" stroke="#FFFFFF" stroke-width="1" opacity="0.22"/>
-<line x1="799.5" y1="604.0" x2="799.5" y2="563.6" stroke="#FFFFFF" stroke-width="1" opacity="0.20"/>
-<line x1="813.0" y1="604.0" x2="813.0" y2="565.0" stroke="#FFFFFF" stroke-width="1" opacity="0.16"/>
-<line x1="826.5" y1="604.0" x2="826.5" y2="577.7" stroke="#FFFFFF" stroke-width="1" opacity="0.13"/>
-<line x1="840.0" y1="604.0" x2="840.0" y2="584.6" stroke="#FFFFFF" stroke-width="1" opacity="0.11"/>
-<line x1="853.5" y1="604.0" x2="853.5" y2="575.9" stroke="#FFFFFF" stroke-width="1" opacity="0.15"/>
-<line x1="867.0" y1="604.0" x2="867.0" y2="563.9" stroke="#FFFFFF" stroke-width="1" opacity="0.19"/>
-<line x1="880.5" y1="604.0" x2="880.5" y2="565.7" stroke="#FFFFFF" stroke-width="1" opacity="0.21"/>
-<line x1="894.0" y1="604.0" x2="894.0" y2="575.3" stroke="#FFFFFF" stroke-width="1" opacity="0.23"/>
-<line x1="907.5" y1="604.0" x2="907.5" y2="591.4" stroke="#FFFFFF" stroke-width="1" opacity="0.24"/>
-<line x1="921.0" y1="604.0" x2="921.0" y2="572.8" stroke="#FFFFFF" stroke-width="1" opacity="0.24"/>
-<line x1="934.5" y1="604.0" x2="934.5" y2="562.2" stroke="#FFFFFF" stroke-width="1" opacity="0.22"/>
-<line x1="948.0" y1="604.0" x2="948.0" y2="566.1" stroke="#FFFFFF" stroke-width="1" opacity="0.20"/>
-<line x1="961.5" y1="604.0" x2="961.5" y2="572.3" stroke="#FFFFFF" stroke-width="1" opacity="0.17"/>
-<line x1="975.0" y1="604.0" x2="975.0" y2="592.6" stroke="#FFFFFF" stroke-width="1" opacity="0.13"/>
-<line x1="988.5" y1="604.0" x2="988.5" y2="576.5" stroke="#FFFFFF" stroke-width="1" opacity="0.11"/>
-<line x1="1002.0" y1="604.0" x2="1002.0" y2="566.3" stroke="#FFFFFF" stroke-width="1" opacity="0.15"/>
-<line x1="1015.5" y1="604.0" x2="1015.5" y2="560.3" stroke="#FFFFFF" stroke-width="1" opacity="0.18"/>
-<line x1="1029.0" y1="604.0" x2="1029.0" y2="568.8" stroke="#FFFFFF" stroke-width="1" opacity="0.21"/>
-<line x1="1042.5" y1="604.0" x2="1042.5" y2="587.7" stroke="#FFFFFF" stroke-width="1" opacity="0.23"/>
-<line x1="1056.0" y1="604.0" x2="1056.0" y2="582.1" stroke="#FFFFFF" stroke-width="1" opacity="0.24"/>
-<line x1="1069.5" y1="604.0" x2="1069.5" y2="567.4" stroke="#FFFFFF" stroke-width="1" opacity="0.24"/>
-<line x1="1083.0" y1="604.0" x2="1083.0" y2="569.8" stroke="#FFFFFF" stroke-width="1" opacity="0.22"/>
-<line x1="1096.5" y1="604.0" x2="1096.5" y2="570.7" stroke="#FFFFFF" stroke-width="1" opacity="0.20"/>
-<line x1="1110.0" y1="604.0" x2="1110.0" y2="586.3" stroke="#FFFFFF" stroke-width="1" opacity="0.17"/>
-<line x1="1123.5" y1="604.0" x2="1123.5" y2="587.3" stroke="#FFFFFF" stroke-width="1" opacity="0.13"/>
-<line x1="1137.0" y1="604.0" x2="1137.0" y2="575.1" stroke="#FFFFFF" stroke-width="1" opacity="0.11"/>
-<line x1="1150.5" y1="604.0" x2="1150.5" y2="562.4" stroke="#FFFFFF" stroke-width="1" opacity="0.15"/>
-<line x1="1164.0" y1="604.0" x2="1164.0" y2="572.5" stroke="#FFFFFF" stroke-width="1" opacity="0.18"/>
-<line x1="1177.5" y1="604.0" x2="1177.5" y2="582.9" stroke="#FFFFFF" stroke-width="1" opacity="0.21"/>
-<line x1="1191.0" y1="604.0" x2="1191.0" y2="587.2" stroke="#FFFFFF" stroke-width="1" opacity="0.23"/>
-<line x1="1204.5" y1="604.0" x2="1204.5" y2="568.7" stroke="#FFFFFF" stroke-width="1" opacity="0.24"/>
-<line x1="1218.0" y1="604.0" x2="1218.0" y2="569.6" stroke="#FFFFFF" stroke-width="1" opacity="0.24"/>
-<line x1="1231.5" y1="604.0" x2="1231.5" y2="568.0" stroke="#FFFFFF" stroke-width="1" opacity="0.23"/>
-<line x1="1245.0" y1="604.0" x2="1245.0" y2="577.5" stroke="#FFFFFF" stroke-width="1" opacity="0.20"/>
-<line x1="1258.5" y1="604.0" x2="1258.5" y2="585.0" stroke="#FFFFFF" stroke-width="1" opacity="0.17"/>
-<line x1="1272.0" y1="604.0" x2="1272.0" y2="571.2" stroke="#FFFFFF" stroke-width="1" opacity="0.14"/>
-<line x1="1285.5" y1="604.0" x2="1285.5" y2="562.3" stroke="#FFFFFF" stroke-width="1" opacity="0.10"/>
-<line x1="1299.0" y1="604.0" x2="1299.0" y2="568.7" stroke="#FFFFFF" stroke-width="1" opacity="0.14"/>
-<line x1="1312.5" y1="604.0" x2="1312.5" y2="576.6" stroke="#FFFFFF" stroke-width="1" opacity="0.18"/>
-<line x1="1326.0" y1="604.0" x2="1326.0" y2="591.9" stroke="#FFFFFF" stroke-width="1" opacity="0.21"/>
-<line x1="1339.5" y1="604.0" x2="1339.5" y2="572.8" stroke="#FFFFFF" stroke-width="1" opacity="0.23"/>
-<line x1="1353.0" y1="604.0" x2="1353.0" y2="562.2" stroke="#FFFFFF" stroke-width="1" opacity="0.24"/>
-<line x1="1366.5" y1="604.0" x2="1366.5" y2="569.2" stroke="#FFFFFF" stroke-width="1" opacity="0.24"/>
-<line x1="1380.0" y1="604.0" x2="1380.0" y2="576.9" stroke="#FFFFFF" stroke-width="1" opacity="0.23"/>
-<line x1="1393.5" y1="604.0" x2="1393.5" y2="590.5" stroke="#FFFFFF" stroke-width="1" opacity="0.21"/>
-<line x1="1407.0" y1="604.0" x2="1407.0" y2="581.6" stroke="#FFFFFF" stroke-width="1" opacity="0.18"/>
-<line x1="1420.5" y1="604.0" x2="1420.5" y2="568.1" stroke="#FFFFFF" stroke-width="1" opacity="0.14"/>
-<line x1="1434.0" y1="604.0" x2="1434.0" y2="564.3" stroke="#FFFFFF" stroke-width="1" opacity="0.10"/>
-<line x1="1447.5" y1="604.0" x2="1447.5" y2="574.1" stroke="#FFFFFF" stroke-width="1" opacity="0.14"/>
-<line x1="1461.0" y1="604.0" x2="1461.0" y2="590.1" stroke="#FFFFFF" stroke-width="1" opacity="0.17"/>
-<line x1="1474.5" y1="604.0" x2="1474.5" y2="582.2" stroke="#FFFFFF" stroke-width="1" opacity="0.21"/>
-<line x1="1488.0" y1="604.0" x2="1488.0" y2="570.6" stroke="#FFFFFF" stroke-width="1" opacity="0.23"/>
-<line x1="1501.5" y1="604.0" x2="1501.5" y2="564.3" stroke="#FFFFFF" stroke-width="1" opacity="0.24"/>
-<line x1="1515.0" y1="604.0" x2="1515.0" y2="565.5" stroke="#FFFFFF" stroke-width="1" opacity="0.24"/>
-<line x1="1528.5" y1="604.0" x2="1528.5" y2="580.6" stroke="#FFFFFF" stroke-width="1" opacity="0.23"/>
-<line x1="1542.0" y1="604.0" x2="1542.0" y2="583.8" stroke="#FFFFFF" stroke-width="1" opacity="0.21"/>
-<line x1="1555.5" y1="604.0" x2="1555.5" y2="569.7" stroke="#FFFFFF" stroke-width="1" opacity="0.18"/>
-<line x1="1569.0" y1="604.0" x2="1569.0" y2="563.3" stroke="#FFFFFF" stroke-width="1" opacity="0.14"/>
-<line x1="1582.5" y1="604.0" x2="1582.5" y2="573.0" stroke="#FFFFFF" stroke-width="1" opacity="0.10"/>
-<line x1="1596.0" y1="604.0" x2="1596.0" y2="576.0" stroke="#FFFFFF" stroke-width="1" opacity="0.14"/>
-<line x1="1609.5" y1="604.0" x2="1609.5" y2="583.8" stroke="#FFFFFF" stroke-width="1" opacity="0.17"/>
-<line x1="1623.0" y1="604.0" x2="1623.0" y2="569.0" stroke="#FFFFFF" stroke-width="1" opacity="0.20"/>
-<line x1="1636.5" y1="604.0" x2="1636.5" y2="562.5" stroke="#FFFFFF" stroke-width="1" opacity="0.23"/>
-<line x1="1650.0" y1="604.0" x2="1650.0" y2="568.4" stroke="#FFFFFF" stroke-width="1" opacity="0.24"/>
-<line x1="1663.5" y1="604.0" x2="1663.5" y2="578.6" stroke="#FFFFFF" stroke-width="1" opacity="0.24"/>
-<line x1="1677.0" y1="604.0" x2="1677.0" y2="593.2" stroke="#FFFFFF" stroke-width="1" opacity="0.23"/>
-<line x1="1690.5" y1="604.0" x2="1690.5" y2="573.4" stroke="#FFFFFF" stroke-width="1" opacity="0.21"/>
-<line x1="1704.0" y1="604.0" x2="1704.0" y2="570.5" stroke="#FFFFFF" stroke-width="1" opacity="0.18"/>
-<line x1="1717.5" y1="604.0" x2="1717.5" y2="570.6" stroke="#FFFFFF" stroke-width="1" opacity="0.15"/>
-<line x1="1731.0" y1="604.0" x2="1731.0" y2="578.3" stroke="#FFFFFF" stroke-width="1" opacity="0.11"/>
-<line x1="1744.5" y1="604.0" x2="1744.5" y2="593.4" stroke="#FFFFFF" stroke-width="1" opacity="0.13"/>
-<line x1="1758.0" y1="604.0" x2="1758.0" y2="578.6" stroke="#FFFFFF" stroke-width="1" opacity="0.17"/>
-<line x1="1771.5" y1="604.0" x2="1771.5" y2="571.5" stroke="#FFFFFF" stroke-width="1" opacity="0.20"/>
-<line x1="1785.0" y1="604.0" x2="1785.0" y2="570.6" stroke="#FFFFFF" stroke-width="1" opacity="0.22"/>
-<line x1="1798.5" y1="604.0" x2="1798.5" y2="576.8" stroke="#FFFFFF" stroke-width="1" opacity="0.24"/>
-<line x1="1812.0" y1="604.0" x2="1812.0" y2="591.3" stroke="#FFFFFF" stroke-width="1" opacity="0.24"/>
-<line x1="1825.5" y1="604.0" x2="1825.5" y2="580.7" stroke="#FFFFFF" stroke-width="1" opacity="0.23"/>
-<line x1="1839.0" y1="604.0" x2="1839.0" y2="572.9" stroke="#FFFFFF" stroke-width="1" opacity="0.21"/>
-<line x1="1852.5" y1="604.0" x2="1852.5" y2="561.4" stroke="#FFFFFF" stroke-width="1" opacity="0.18"/>
-<line x1="1866.0" y1="604.0" x2="1866.0" y2="570.3" stroke="#FFFFFF" stroke-width="1" opacity="0.15"/>
-<line x1="1879.5" y1="604.0" x2="1879.5" y2="588.2" stroke="#FFFFFF" stroke-width="1" opacity="0.11"/>
-<line x1="1893.0" y1="604.0" x2="1893.0" y2="584.3" stroke="#FFFFFF" stroke-width="1" opacity="0.13"/>
-</g>
-<g id="rv">
-<path d="M 70.0,150.00 L 76.0,153.86 L 82.0,157.45 L 88.0,160.55 L 94.0,162.94 L 100.0,164.45 L 106.0,165.00 L 112.0,164.54 L 118.0,163.10 L 124.0,160.78 L 130.0,157.73 L 136.0,154.17 L 142.0,150.32 L 148.0,146.46 L 154.0,142.83 L 160.0,139.68 L 166.0,137.23 L 172.0,135.64 L 178.0,135.01 L 184.0,135.39 L 190.0,136.75 L 196.0,139.00 L 202.0,141.99 L 208.0,145.52 L 214.0,149.35 L 220.0,153.22 L 226.0,156.88 L 232.0,160.08 L 238.0,162.59 L 244.0,164.27 L 250.0,164.98 L 256.0,164.68 L 262.0,163.40 L 268.0,161.22 L 274.0,158.28 L 280.0,154.79 L 286.0,150.97 L 292.0,147.09 L 298.0,143.41 L 304.0,140.17 L 310.0,137.58 L 316.0,135.84 L 322.0,135.04 L 328.0,135.25 L 334.0,136.46 L 340.0,138.57 L 346.0,141.45 L 352.0,144.90 L 358.0,148.70 L 364.0,152.59 L 370.0,156.30 L 376.0,159.59 L 382.0,162.23 L 388.0,164.05 L 394.0,164.93 L 400.0,164.80 L 406.0,163.68 L 412.0,161.64 L 418.0,158.82 L 424.0,155.40 L 430.0,151.62 L 436.0,147.73 L 442.0,144.00 L 448.0,140.67 L 454.0,137.96 L 460.0,136.07 L 466.0,135.11 L 472.0,135.15 L 478.0,136.19 L 484.0,138.16 L 490.0,140.92 L 496.0,144.30 L 502.0,148.06 L 508.0,151.94 L 514.0,155.70 L 520.0,159.08 L 526.0,161.84 L 532.0,163.81 L 538.0,164.85 L 544.0,164.89 L 550.0,163.93 L 556.0,162.04 L 562.0,159.33 L 568.0,156.00 L 574.0,152.27 L 580.0,148.38 L 586.0,144.60 L 592.0,141.18 L 598.0,138.36 L 604.0,136.32 L 610.0,135.20 L 616.0,135.07 L 622.0,135.95 L 628.0,137.77 L 634.0,140.41 L 640.0,143.70" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity="0.30"/>
-<circle cx="56" cy="150" r="4.5" fill="#FFFFFF" opacity="0.55"/>
-</g>
-<g id="corona">
-<line x1="1513.3" y1="298.9" x2="1535.2" y2="298.4" stroke="#FFFFFF" stroke-width="1" opacity="0.20"/>
-<line x1="1513.2" y1="315.2" x2="1545.4" y2="324.4" stroke="#FFFFFF" stroke-width="1" opacity="0.09"/>
-<line x1="1509.4" y1="318.8" x2="1534.1" y2="328.2" stroke="#FFFFFF" stroke-width="1" opacity="0.20"/>
-<line x1="1498.8" y1="325.5" x2="1539.3" y2="352.1" stroke="#FFFFFF" stroke-width="1" opacity="0.15"/>
-<line x1="1500.1" y1="340.3" x2="1513.4" y2="353.7" stroke="#FFFFFF" stroke-width="1" opacity="0.15"/>
-<line x1="1487.9" y1="356.8" x2="1505.7" y2="392.9" stroke="#FFFFFF" stroke-width="1" opacity="0.12"/>
-<line x1="1476.1" y1="346.6" x2="1490.1" y2="387.0" stroke="#FFFFFF" stroke-width="1" opacity="0.15"/>
-<line x1="1463.5" y1="352.5" x2="1465.1" y2="377.6" stroke="#FFFFFF" stroke-width="1" opacity="0.19"/>
-<line x1="1449.2" y1="362.1" x2="1441.7" y2="405.3" stroke="#FFFFFF" stroke-width="1" opacity="0.19"/>
-<line x1="1442.8" y1="347.5" x2="1431.0" y2="380.0" stroke="#FFFFFF" stroke-width="1" opacity="0.13"/>
-<line x1="1439.4" y1="341.8" x2="1427.5" y2="365.9" stroke="#FFFFFF" stroke-width="1" opacity="0.12"/>
-<line x1="1415.1" y1="347.2" x2="1392.9" y2="370.6" stroke="#FFFFFF" stroke-width="1" opacity="0.21"/>
-<line x1="1404.8" y1="334.6" x2="1379.7" y2="350.4" stroke="#FFFFFF" stroke-width="1" opacity="0.11"/>
-<line x1="1415.2" y1="322.0" x2="1393.2" y2="332.9" stroke="#FFFFFF" stroke-width="1" opacity="0.17"/>
-<line x1="1397.9" y1="309.6" x2="1365.0" y2="314.7" stroke="#FFFFFF" stroke-width="1" opacity="0.17"/>
-<line x1="1412.3" y1="298.0" x2="1373.2" y2="296.4" stroke="#FFFFFF" stroke-width="1" opacity="0.21"/>
-<line x1="1400.9" y1="285.0" x2="1368.6" y2="276.8" stroke="#FFFFFF" stroke-width="1" opacity="0.10"/>
-<line x1="1412.8" y1="276.7" x2="1373.7" y2="257.3" stroke="#FFFFFF" stroke-width="1" opacity="0.22"/>
-<line x1="1415.8" y1="268.9" x2="1376.4" y2="241.1" stroke="#FFFFFF" stroke-width="1" opacity="0.18"/>
-<line x1="1425.9" y1="265.5" x2="1409.8" y2="249.2" stroke="#FFFFFF" stroke-width="1" opacity="0.21"/>
-<line x1="1437.4" y1="256.6" x2="1416.8" y2="217.2" stroke="#FFFFFF" stroke-width="1" opacity="0.22"/>
-<line x1="1444.7" y1="249.2" x2="1434.5" y2="215.2" stroke="#FFFFFF" stroke-width="1" opacity="0.10"/>
-<line x1="1448.8" y1="235.6" x2="1442.1" y2="197.3" stroke="#FFFFFF" stroke-width="1" opacity="0.15"/>
-<line x1="1469.0" y1="246.1" x2="1476.5" y2="200.8" stroke="#FFFFFF" stroke-width="1" opacity="0.20"/>
-<line x1="1473.8" y1="250.9" x2="1481.2" y2="224.5" stroke="#FFFFFF" stroke-width="1" opacity="0.11"/>
-<line x1="1486.1" y1="256.0" x2="1502.2" y2="229.0" stroke="#FFFFFF" stroke-width="1" opacity="0.10"/>
-<line x1="1497.7" y1="262.7" x2="1520.9" y2="239.7" stroke="#FFFFFF" stroke-width="1" opacity="0.16"/>
-<line x1="1505.8" y1="270.6" x2="1545.6" y2="244.9" stroke="#FFFFFF" stroke-width="1" opacity="0.15"/>
-<line x1="1511.7" y1="277.3" x2="1528.7" y2="269.8" stroke="#FFFFFF" stroke-width="1" opacity="0.14"/>
-<line x1="1504.6" y1="288.4" x2="1546.8" y2="277.5" stroke="#FFFFFF" stroke-width="1" opacity="0.10"/>
-<circle cx="1460" cy="300" r="32" fill="none" stroke="#FFFFFF" stroke-width="1.3" opacity="0.42"/>
-<circle cx="1460" cy="300" r="54" fill="none" stroke="#FFFFFF" stroke-width="1.3" opacity="0.35"/>
-<circle cx="1460" cy="300" r="82" fill="none" stroke="#FFFFFF" stroke-width="1.3" opacity="0.28"/>
-<circle cx="1460" cy="300" r="116" fill="none" stroke="#FFFFFF" stroke-width="1.3" opacity="0.21"/>
-<circle cx="1460" cy="300" r="156" fill="none" stroke="#FFFFFF" stroke-width="1.3" opacity="0.14"/>
-<circle cx="1460" cy="300" r="17" fill="#1b2140" stroke="#FFFFFF" stroke-width="1.5" opacity="0.7"/>
-</g>
-<g id="orbits">
-<ellipse cx="1460" cy="300" rx="150" ry="58" fill="none" stroke="#FFFFFF" stroke-width="1.1" stroke-dasharray="3 7" opacity="0.24" transform="rotate(-13 1460 300)"/>
-<ellipse cx="1460" cy="300" rx="250" ry="97" fill="none" stroke="#FFFFFF" stroke-width="1.1" stroke-dasharray="3 7" opacity="0.20" transform="rotate(-13 1460 300)"/>
-<ellipse cx="1460" cy="300" rx="345" ry="133" fill="none" stroke="#FFFFFF" stroke-width="1.1" stroke-dasharray="3 7" opacity="0.15" transform="rotate(-13 1460 300)"/>
-<circle cx="1324.8" cy="303.3" r="5.5" fill="#FFFFFF" opacity="0.8"/>
-<circle cx="1681.9" cy="298.6" r="7" fill="#FFFFFF" opacity="0.9"/>
-<circle cx="1183.8" cy="432.0" r="5" fill="#FFFFFF" opacity="0.7"/>
-<circle cx="1681.9" cy="298.6" r="15" fill="none" stroke="#FFFFFF" stroke-width="0.9" stroke-dasharray="2 4" opacity="0.28"/>
-<circle cx="1693.4" cy="288.9" r="2.4" fill="#FFFFFF" opacity="0.75"/>
-</g>
+<defs>
+<symbol id="corona" viewBox="0 0 100 100"><circle cx="50" cy="50" r="10" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+<circle cx="50" cy="50" r="18" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+<circle cx="50" cy="50" r="27" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+<circle cx="50" cy="50" r="37" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+<circle cx="50" cy="50" r="6" fill="#1b2140" stroke="#FFFFFF" stroke-width="2"/>
+<line x1="92.0" y1="50.0" x2="98.0" y2="50.0" stroke="#FFFFFF" stroke-width="1.5"/>
+<line x1="79.7" y1="79.7" x2="83.9" y2="83.9" stroke="#FFFFFF" stroke-width="1.5"/>
+<line x1="50.0" y1="92.0" x2="50.0" y2="98.0" stroke="#FFFFFF" stroke-width="1.5"/>
+<line x1="20.3" y1="79.7" x2="16.1" y2="83.9" stroke="#FFFFFF" stroke-width="1.5"/>
+<line x1="8.0" y1="50.0" x2="2.0" y2="50.0" stroke="#FFFFFF" stroke-width="1.5"/>
+<line x1="20.3" y1="20.3" x2="16.1" y2="16.1" stroke="#FFFFFF" stroke-width="1.5"/>
+<line x1="50.0" y1="8.0" x2="50.0" y2="2.0" stroke="#FFFFFF" stroke-width="1.5"/>
+<line x1="79.7" y1="20.3" x2="83.9" y2="16.1" stroke="#FFFFFF" stroke-width="1.5"/></symbol>
+<symbol id="orbit" viewBox="0 0 100 100"><ellipse cx="50" cy="52" rx="42" ry="18" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="3 6" transform="rotate(-10 50 52)"/>
+<circle cx="50" cy="52" r="4" fill="#FFFFFF"/>
+<circle cx="86" cy="46" r="6" fill="#FFFFFF"/>
+<circle cx="86" cy="46" r="12" fill="none" stroke="#FFFFFF" stroke-width="1.3" stroke-dasharray="2 4"/>
+<circle cx="93" cy="39" r="2" fill="#FFFFFF"/></symbol>
+<symbol id="transit" viewBox="0 0 100 100"><circle cx="6" cy="50" r="4" fill="#FFFFFF"/>
+<path d="M 10 50 L 32 50 Q 40 50 42 58 L 58 58 Q 60 50 68 50 L 90 50" fill="none" stroke="#FFFFFF" stroke-width="2.4"/></symbol>
+<symbol id="rv" viewBox="0 0 100 100"><circle cx="6" cy="50" r="4" fill="#FFFFFF"/>
+<path d="M 10 50 L 10.0 50.0 L 14.0 53.7 L 18.0 57.1 L 22.0 59.7 L 26.0 61.4 L 30.0 62.0 L 34.0 61.4 L 38.0 59.7 L 42.0 57.1 L 46.0 53.7 L 50.0 50.0 L 54.0 46.3 L 58.0 42.9 L 62.0 40.3 L 66.0 38.6 L 70.0 38.0 L 74.0 38.6 L 78.0 40.3 L 82.0 42.9 L 86.0 46.3 L 90.0 50.0" fill="none" stroke="#FFFFFF" stroke-width="2.2"/></symbol>
+<symbol id="spectrum" viewBox="0 0 100 100"><path d="M 6 60 L 24 60 L 30 30 L 34 60 L 50 60 L 54 42 L 58 60 L 76 60 L 80 22 L 84 60 L 94 60" fill="none" stroke="#FFFFFF" stroke-width="2"/></symbol>
+<symbol id="comb" viewBox="0 0 100 100"><line x1="8" y1="80" x2="8" y2="62.0" stroke="#FFFFFF" stroke-width="1.8"/>
+<line x1="16" y1="80" x2="16" y2="51.033423265215234" stroke="#FFFFFF" stroke-width="1.8"/>
+<line x1="24" y1="80" x2="24" y2="48.36613316770527" stroke="#FFFFFF" stroke-width="1.8"/>
+<line x1="32" y1="80" x2="32" y2="56.016681676726385" stroke="#FFFFFF" stroke-width="1.8"/>
+<line x1="40" y1="80" x2="40" y2="55.80471379387207" stroke="#FFFFFF" stroke-width="1.8"/>
+<line x1="48" y1="80" x2="48" y2="48.31457835268864" stroke="#FFFFFF" stroke-width="1.8"/>
+<line x1="56" y1="80" x2="56" y2="51.18129717421618" stroke="#FFFFFF" stroke-width="1.8"/>
+<line x1="64" y1="80" x2="64" y2="61.7646053932191" stroke="#FFFFFF" stroke-width="1.8"/>
+<line x1="72" y1="80" x2="72" y2="50.88864990611186" stroke="#FFFFFF" stroke-width="1.8"/>
+<line x1="80" y1="80" x2="80" y2="48.421542648168796" stroke="#FFFFFF" stroke-width="1.8"/>
+<line x1="88" y1="80" x2="88" y2="56.23034120661541" stroke="#FFFFFF" stroke-width="1.8"/></symbol>
+<symbol id="telescope" viewBox="0 0 100 100"><path d="M 20 78 A 30 30 0 0 1 80 78 Z" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+<rect x="12" y="78" width="76" height="6" fill="none" stroke="#FFFFFF" stroke-width="1.6"/>
+<line x1="50" y1="48" x2="72" y2="20" stroke="#FFFFFF" stroke-width="3"/>
+<circle cx="72" cy="20" r="4" fill="none" stroke="#FFFFFF" stroke-width="1.6"/></symbol>
+<symbol id="mirror" viewBox="0 0 100 100"><path d="M 15 20 Q 50 90 85 20" fill="none" stroke="#FFFFFF" stroke-width="2.2"/>
+<line x1="20" y1="10" x2="46" y2="55" stroke="#FFFFFF" stroke-width="1.4"/>
+<line x1="50" y1="5" x2="50" y2="60" stroke="#FFFFFF" stroke-width="1.4"/>
+<line x1="80" y1="10" x2="54" y2="55" stroke="#FFFFFF" stroke-width="1.4"/>
+<circle cx="50" cy="60" r="3" fill="#FFFFFF"/></symbol>
+<symbol id="star" viewBox="0 0 100 100"><circle cx="50" cy="50" r="5" fill="#FFFFFF"/>
+<line x1="50" y1="50" x2="88.0" y2="50.0" stroke="#FFFFFF" stroke-width="1.6" opacity="0.9"/>
+<line x1="50" y1="50" x2="76.9" y2="76.9" stroke="#FFFFFF" stroke-width="1" opacity="0.4"/>
+<line x1="50" y1="50" x2="50.0" y2="88.0" stroke="#FFFFFF" stroke-width="1.6" opacity="0.9"/>
+<line x1="50" y1="50" x2="23.1" y2="76.9" stroke="#FFFFFF" stroke-width="1" opacity="0.4"/>
+<line x1="50" y1="50" x2="12.0" y2="50.0" stroke="#FFFFFF" stroke-width="1.6" opacity="0.9"/>
+<line x1="50" y1="50" x2="23.1" y2="23.1" stroke="#FFFFFF" stroke-width="1" opacity="0.4"/>
+<line x1="50" y1="50" x2="50.0" y2="12.0" stroke="#FFFFFF" stroke-width="1.6" opacity="0.9"/>
+<line x1="50" y1="50" x2="76.9" y2="23.1" stroke="#FFFFFF" stroke-width="1" opacity="0.4"/></symbol>
+<symbol id="detector" viewBox="0 0 100 100"><rect x="15" y="15" width="70" height="70" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+<line x1="32.5" y1="15" x2="32.5" y2="85" stroke="#FFFFFF" stroke-width="1"/>
+<line x1="50.0" y1="15" x2="50.0" y2="85" stroke="#FFFFFF" stroke-width="1"/>
+<line x1="67.5" y1="15" x2="67.5" y2="85" stroke="#FFFFFF" stroke-width="1"/>
+<line x1="15" y1="32.5" x2="85" y2="32.5" stroke="#FFFFFF" stroke-width="1"/>
+<line x1="15" y1="50.0" x2="85" y2="50.0" stroke="#FFFFFF" stroke-width="1"/>
+<line x1="15" y1="67.5" x2="85" y2="67.5" stroke="#FFFFFF" stroke-width="1"/></symbol>
+<symbol id="prism" viewBox="0 0 100 100"><path d="M 30 75 L 50 20 L 70 75 Z" fill="none" stroke="#FFFFFF" stroke-width="2.2"/>
+<line x1="5" y1="55" x2="38" y2="55" stroke="#FFFFFF" stroke-width="1.8"/>
+<line x1="62" y1="55" x2="95" y2="40" stroke="#FFFFFF" stroke-width="1.4" opacity="0.85"/>
+<line x1="62" y1="55" x2="95" y2="48" stroke="#FFFFFF" stroke-width="1.4" opacity="0.73"/>
+<line x1="62" y1="55" x2="95" y2="56" stroke="#FFFFFF" stroke-width="1.4" opacity="0.61"/>
+<line x1="62" y1="55" x2="95" y2="64" stroke="#FFFFFF" stroke-width="1.4" opacity="0.49"/>
+<line x1="62" y1="55" x2="95" y2="72" stroke="#FFFFFF" stroke-width="1.4" opacity="0.37"/></symbol>
+<symbol id="interferometer" viewBox="0 0 100 100"><line x1="8" y1="50" x2="92" y2="50" stroke="#FFFFFF" stroke-width="1.6"/>
+<line x1="50" y1="12" x2="50" y2="88" stroke="#FFFFFF" stroke-width="1.2" opacity="0.6"/>
+<line x1="38" y1="38" x2="62" y2="62" stroke="#FFFFFF" stroke-width="2"/>
+<circle cx="50" cy="50" r="3" fill="#FFFFFF"/>
+<circle cx="12" cy="50" r="2.4" fill="#FFFFFF"/>
+<circle cx="88" cy="50" r="2.4" fill="#FFFFFF"/>
+<circle cx="50" cy="14" r="2.4" fill="#FFFFFF"/></symbol>
+</defs>
+<use href="#star" x="-50" y="-50" width="100" height="100" transform="translate(89.0 64.9) rotate(-4.3) scale(0.766)" opacity="0.45"/>
+<use href="#telescope" x="-50" y="-50" width="100" height="100" transform="translate(226.6 45.9) rotate(-6.5) scale(0.819)" opacity="0.33"/>
+<use href="#rv" x="-50" y="-50" width="100" height="100" transform="translate(359.2 67.2) rotate(11.8) scale(1.050)" opacity="0.33"/>
+<use href="#orbit" x="-50" y="-50" width="100" height="100" transform="translate(536.4 44.4) rotate(-11.2) scale(0.856)" opacity="0.5"/>
+<use href="#spectrum" x="-50" y="-50" width="100" height="100" transform="translate(659.1 71.3) rotate(0.1) scale(0.921)" opacity="0.34"/>
+<use href="#detector" x="-50" y="-50" width="100" height="100" transform="translate(807.3 76.7) rotate(8.4) scale(0.988)" opacity="0.41"/>
+<use href="#corona" x="-50" y="-50" width="100" height="100" transform="translate(1086.7 73.5) rotate(11.4) scale(1.083)" opacity="0.47"/>
+<use href="#telescope" x="-50" y="-50" width="100" height="100" transform="translate(1272.6 63.7) rotate(10.2) scale(1.057)" opacity="0.55"/>
+<use href="#orbit" x="-50" y="-50" width="100" height="100" transform="translate(1377.9 58.3) rotate(4.3) scale(0.965)" opacity="0.56"/>
+<use href="#transit" x="-50" y="-50" width="100" height="100" transform="translate(1548.1 54.5) rotate(-5.6) scale(0.875)" opacity="0.49"/>
+<use href="#orbit" x="-50" y="-50" width="100" height="100" transform="translate(87.2 173.6) rotate(-1.4) scale(0.879)" opacity="0.57"/>
+<use href="#telescope" x="-50" y="-50" width="100" height="100" transform="translate(346.7 174.8) rotate(-0.9) scale(0.802)" opacity="0.33"/>
+<use href="#orbit" x="-50" y="-50" width="100" height="100" transform="translate(537.1 200.5) rotate(12.5) scale(0.862)" opacity="0.34"/>
+<use href="#prism" x="-50" y="-50" width="100" height="100" transform="translate(671.0 182.3) rotate(1.9) scale(1.071)" opacity="0.46"/>
+<use href="#corona" x="-50" y="-50" width="100" height="100" transform="translate(796.9 192.4) rotate(-6.1) scale(0.693)" opacity="0.54"/>
+<use href="#comb" x="-50" y="-50" width="100" height="100" transform="translate(1105.9 192.1) rotate(8.5) scale(1.019)" opacity="0.46"/>
+<use href="#interferometer" x="-50" y="-50" width="100" height="100" transform="translate(1268.0 183.1) rotate(-6.0) scale(0.967)" opacity="0.44"/>
+<use href="#rv" x="-50" y="-50" width="100" height="100" transform="translate(1401.9 171.8) rotate(-1.2) scale(0.747)" opacity="0.56"/>
+<use href="#mirror" x="-50" y="-50" width="100" height="100" transform="translate(1570.4 181.0) rotate(5.2) scale(0.974)" opacity="0.39"/>
+<use href="#prism" x="-50" y="-50" width="100" height="100" transform="translate(1837.2 202.1) rotate(0.8) scale(0.962)" opacity="0.42"/>
+<use href="#transit" x="-50" y="-50" width="100" height="100" transform="translate(1133.1 315.0) rotate(4.6) scale(0.752)" opacity="0.46"/>
+<use href="#detector" x="-50" y="-50" width="100" height="100" transform="translate(1256.2 337.2) rotate(6.0) scale(0.865)" opacity="0.34"/>
+<use href="#corona" x="-50" y="-50" width="100" height="100" transform="translate(1405.3 322.1) rotate(-9.8) scale(0.798)" opacity="0.38"/>
+<use href="#mirror" x="-50" y="-50" width="100" height="100" transform="translate(1547.8 300.3) rotate(-2.6) scale(0.812)" opacity="0.36"/>
+<use href="#transit" x="-50" y="-50" width="100" height="100" transform="translate(1677.4 308.1) rotate(11.9) scale(0.827)" opacity="0.36"/>
+<use href="#mirror" x="-50" y="-50" width="100" height="100" transform="translate(1835.7 323.8) rotate(-8.7) scale(0.734)" opacity="0.32"/>
+<use href="#corona" x="-50" y="-50" width="100" height="100" transform="translate(514.4 449.2) rotate(4.5) scale(0.924)" opacity="0.23"/>
+<use href="#interferometer" x="-50" y="-50" width="100" height="100" transform="translate(1093.3 446.0) rotate(-11.6) scale(0.937)" opacity="0.51"/>
+<use href="#corona" x="-50" y="-50" width="100" height="100" transform="translate(1232.2 456.0) rotate(9.6) scale(0.991)" opacity="0.56"/>
+<use href="#telescope" x="-50" y="-50" width="100" height="100" transform="translate(1402.3 459.1) rotate(-1.0) scale(0.792)" opacity="0.53"/>
+<use href="#mirror" x="-50" y="-50" width="100" height="100" transform="translate(1833.9 461.1) rotate(13.6) scale(1.073)" opacity="0.37"/>
+<use href="#prism" x="-50" y="-50" width="100" height="100" transform="translate(344.0 556.3) rotate(-11.5) scale(1.007)" opacity="0.43"/>
+<use href="#mirror" x="-50" y="-50" width="100" height="100" transform="translate(495.3 570.5) rotate(13.6) scale(0.812)" opacity="0.38"/>
+<use href="#transit" x="-50" y="-50" width="100" height="100" transform="translate(788.7 569.7) rotate(-4.6) scale(0.731)" opacity="0.4"/>
+<use href="#prism" x="-50" y="-50" width="100" height="100" transform="translate(958.2 577.8) rotate(-8.2) scale(1.010)" opacity="0.47"/>
+<use href="#rv" x="-50" y="-50" width="100" height="100" transform="translate(1111.7 567.5) rotate(8.7) scale(0.908)" opacity="0.31"/>
+<use href="#transit" x="-50" y="-50" width="100" height="100" transform="translate(1254.6 583.8) rotate(3.8) scale(0.760)" opacity="0.35"/>
+<use href="#orbit" x="-50" y="-50" width="100" height="100" transform="translate(1418.5 561.6) rotate(-0.3) scale(0.751)" opacity="0.55"/>
+<use href="#star" x="-50" y="-50" width="100" height="100" transform="translate(1552.7 598.4) rotate(3.1) scale(0.865)" opacity="0.39"/>
+<use href="#corona" x="-50" y="-50" width="100" height="100" transform="translate(1870.1 594.8) rotate(9.7) scale(0.971)" opacity="0.54"/>
 </svg>
