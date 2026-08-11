@@ -11,6 +11,24 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.tiles article.teaching:before {
+				background-color: #B56576;
+			}
+			.tiles article.teaching {
+				background-position: center 75%;
+			}
+			.tiles article.about-tile {
+				background-position: center 25%;
+			}
+			.tiles article.research {
+				background-color: #0f0505;
+				background-size: contain;
+			}
+			.tiles article.cv-tile {
+				background-position: center top;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -30,8 +48,8 @@
 							<li><a href="index.html">Home</a></li>
 							<li><a href="about.html">About me</a></li>
 							<li><a href="research.html">Research</a></li>
+							<li><a href="teaching.html">Teaching</a></li>
 							<li><a href="deio.html">DEIO Efforts</a></li>
-                            <li><a href="resources.html">Resources</a></li>
                             <li><a href="CV.html">CV</a></li>
                             <li><a href="contact.html">Contact me</a></li>
 						</ul>
@@ -62,13 +80,14 @@
                                 </a>
                                 <div class="content">
                                     <div class="inner">
-                                        <p>Hi, my name is Katelyn Horstman! I attended UCLA, where I graduated with departmental honors and received a Bachelor of Science in Astrophysics in 2021. Currently, I am pursuing my PhD in Astrophysics at Caltech, working with Professor Dimitri Mawet in the Exoplanet Technology (ET) lab. My research interests include exomoon detection, exoplanet detection and characterization, and near-infrared instrumentation.</p>
+                                        <p>Hi, my name is Katelyn Horstman. I am a PhD candidate in Astrophysics at Caltech, where I work with Professor Dimitri Mawet in the Exoplanet Technology (ET) Lab. My research spans discovering unresolved hierarchical systems, including exo-satellites and binary brown dwarfs, exoplanet detection and characterization, and near-infrared instrumentation. After graduating from UCLA with departmental honors and a Bachelor of Science in Astrophysics in 2021, I have pursued a dual commitment to discovery and education, believing that the questions we ask about the universe are inseparable from who gets to ask them.</p>
+                                        <p>As an educator, I emphasize inquiry-based learning, collaboration, and conceptual understanding, while supporting students of varied backgrounds and levels of preparation. My work mentoring students and leading diversity and inclusion initiatives has shaped my conviction that recognition, transparent expectations, and community-building are essential in STEM education.</p>
                                     </div>
                                 </div>
                             </section>	
 						<!-- Two -->
 							<section id="two" class="tiles">
-								<article>
+								<article class="about-tile">
 									<span class="image">
 										<img src="images/spectrograph.jpg" alt="" />
 									</span>
@@ -76,12 +95,20 @@
 										<h3><a href="about.html" class="link">About me</a></h3>
 									</header>
 								</article>
-								<article>
+								<article class="research">
 									<span class="image">
-										<img src="images/planets.png" alt="" />
+										<img src="images/exomoon_press_release.jpg" alt="" />
 									</span>
 									<header class="major">
 										<h3><a href="research.html" class="link">Research</a></h3>
+									</header>
+								</article>
+								<article class="teaching">
+									<span class="image">
+										<img src="images/teaching.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="teaching.html" class="link">Teaching</a></h3>
 									</header>
 								</article>
 								<article>
@@ -92,17 +119,9 @@
 										<h3><a href="deio.html" class="link">DEIO Efforts</a></h3>
 									</header>
 								</article>
-								<article>
+                                <article class="cv-tile">
 									<span class="image">
-										<img src="images/library.png" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="resources.html" class="link">Resources</a></h3>
-									</header>
-								</article>
-                                <article>
-									<span class="image">
-										<img src="images/observe.jpg" alt="" />
+										<img src="images/new_cv.jpg" alt="" />
 									</span>
 									<header class="major">
 										<h3><a href="CV.html" class="link">CV</a></h3>
@@ -118,6 +137,16 @@
 								</article>
 							</section>
 						</div>
+					<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://etlab.caltech.edu/" class="icon solid alt fa-star"><span class="label">ET Lab</span></a></li>
+								<li><a href="https://github.com/KHorstman" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/katelyn-horstman-792a04158/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+						</div>
+					</footer>
 				</div>
 
 		<!-- Scripts -->
