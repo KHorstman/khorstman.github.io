@@ -28,24 +28,33 @@
 				max-width: 900px;
 				margin: 0 0 2em 0;
 			}
-			#hierarchical-systems .media-row > .image.main {
+			#hierarchical-systems .media-row > .image.main,
+			#hierarchical-systems .media-row > .video-container {
 				flex: 1 1 0;
 				width: auto;
 				max-width: none;
 				margin: 0;
+				position: relative;
+				aspect-ratio: 16 / 9;
+				overflow: hidden;
+				border-radius: 10px;
+			}
+			#hierarchical-systems .media-row > .image.main {
+				padding-bottom: 0;
+				height: auto;
 			}
 			#hierarchical-systems .media-row > .image.main img {
+				position: absolute;
+				top: 0;
+				left: 0;
 				width: 100%;
-				height: auto;
+				height: 100%;
+				object-fit: cover;
 				display: block;
 			}
 			#hierarchical-systems .media-row > .video-container {
-				flex: 1 1 0;
-				max-width: none;
-				margin: 0;
 				padding-bottom: 0;
 				height: auto;
-				aspect-ratio: 16 / 9;
 			}
 			@media screen and (max-width: 736px) {
 				#hierarchical-systems .media-row {
@@ -56,9 +65,6 @@
 					flex: 0 0 auto;
 					width: 100%;
 				}
-			}
-			#banner.style2:after {
-				opacity: 0.45;
 			}
 		</style>
 	</head>
@@ -93,7 +99,7 @@
 					<section id="banner" class="style2">
 						<div class="inner">
 							<span class="image">
-								<img src="images/exomoon.gif" alt="Animated diagram of a star and a directly-imaged companion revealing an unseen moon, then an unseen brown dwarf, through reflex wobble and Doppler shift" />
+								<img src="images/spaceb.png" alt="" />
 							</span>
 							<header class="major">
 								<h1>Research</h1>
