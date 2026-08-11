@@ -11,6 +11,79 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			#main > * {
+				border-top: none;
+			}
+			#main > * > .inner {
+				padding: 2em 0 1em 0;
+			}
+			#hierarchical-systems header.major > h3:after {
+				content: none;
+			}
+			#instrumentation header.major > h3:after {
+				content: none;
+			}
+			#previous-projects header.major > h3:after {
+				content: none;
+			}
+			#previous-projects .image.main {
+				width: auto;
+				max-width: 700px;
+				margin: 0 0 2em 0;
+			}
+			#previous-projects .image.main img {
+				width: 100%;
+				height: auto;
+				display: block;
+				border-radius: 10px;
+			}
+			#hierarchical-systems .media-row {
+				display: flex;
+				align-items: flex-start;
+				gap: 1.5em;
+				width: 100%;
+				margin: 0 0 2em 0;
+			}
+			#hierarchical-systems .media-row > .image.main,
+			#hierarchical-systems .media-row > .video-container {
+				flex: 1 1 0;
+				width: auto;
+				max-width: none;
+				margin: 0;
+				position: relative;
+				aspect-ratio: 474 / 423;
+				overflow: hidden;
+				border-radius: 10px;
+			}
+			#hierarchical-systems .media-row > .image.main {
+				padding-bottom: 0;
+				height: auto;
+			}
+			#hierarchical-systems .media-row > .image.main img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				display: block;
+			}
+			#hierarchical-systems .media-row > .video-container {
+				padding-bottom: 0;
+				height: auto;
+			}
+			@media screen and (max-width: 736px) {
+				#hierarchical-systems .media-row {
+					flex-direction: column;
+				}
+				#hierarchical-systems .media-row > .image.main,
+				#hierarchical-systems .media-row > .video-container {
+					flex: 0 0 auto;
+					width: 100%;
+				}
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -31,8 +104,8 @@
 						<li><a href="index.html">Home</a></li>
 						<li><a href="about.html">About me</a></li>
 						<li><a href="research.html">Research</a></li>
+						<li><a href="teaching.html">Teaching</a></li>
 						<li><a href="deio.html">DEIO Efforts</a></li>
-						<li><a href="resources.html">Resources</a></li>
 						<li><a href="CV.html">CV</a></li>
 						<li><a href="contact.html">Contact me</a></li>
 					</ul>
@@ -58,31 +131,30 @@
                             <section id="one">
                                 <div class="inner">
                                     <div class="content">
-                                        <p> I am currently interested in many different research topics, including exomoon detection, exoplanet detection and characterization, and near-infrared instrumentation.</p>
-                                        <p>A few of my projects are listed below, but please see my CV for more information.</p>
+                                        <p>My current research spans discovering unresolved hierarchical systems, including exo-satellites and binary brown dwarfs, exoplanet detection and characterization, and near-infrared instrumentation.</p>
                                         <ul class="actions">
                                             <li><a href="documents/Katelyn_Horstman_CV.pdf" class="button next">My CV</a></li>
                                         </ul>
                                 </div>
                             </section>
 						<!-- Two -->
-							<section id="two" class="spotlights">
-								<section>
-									<a href="https://arxiv.org/abs/2301.04206" class="image">
-									    <img src="images/moon_resize.jpg" alt="moons" />
-									</a>
+							<section id="hierarchical-systems">
+								<div class="inner">
 									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Exomoons</h3>
-											</header>
-											<p>The detection of satellites around exoplanets, or exomoons, remains a largely unexplored territory. Searching for exomoons to constrain their occurrence rates and bulk properties is important because it can provide insights into the formation of exoplanets and circumplanetary disks, and provide new places to search for habitability. Combining high resolution spectroscopy with high contrast imaging can be used to measure the radial velocities of planets directly to search for exomoons. Current instrumentation is sensitive to detecting moons with ~1-3% the mass of its host planet and could probe gravitational instabilities as a way to create binary brown dwarfs. The next generation of high-resolution spectrographs may provide the precision necessary to perform searches for solar system-like exomoons around directly imaged planets (mass ratios of q &sim; 10<sup>-4</sup>).</p>
-											<ul class="actions">
-												<li><a href="https://ui.adsabs.harvard.edu/search/fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3Aastronomy%20OR%20database%3Aphysics)&q=%20author%3A%22horstman%2C%20k%22%2C%20%20abs%3A%22exomoon%22&sort=date%20desc%2C%20bibcode%20desc&p_=0" class="button">Read more</a></li>
-											</ul>
+										<header class="major">
+											<h2>Science</h2>
+										</header>
+										<p>One of the three major scientific drivers of the 2020 Decadal Survey on Astronomy and Astrophysics is to identify and characterize Earth-like planets around other stars, with the long-term goal of directly imaging potentially habitable worlds to search for biosignatures. To date, astronomers have discovered over 6,000 exoplanets using a diverse array of observational methods and purpose-built instrumentation, developed largely in pursuit of detecting smaller, less-massive planets that resemble Earth. Along the way, these efforts have revealed exciting and unexpected diversity in planets and system architectures, such as Jupiter-mass planets orbiting closer to their star than Mercury or water worlds where the entire planet is potentially covered by oceans, that bear little resemblance to our own solar system.</p>
+										<header class="major">
+											<h3>Exosatellites and Binary Brown Dwarfs</h3>
+										</header>
+										<p>Understanding the striking diversity of planetary systems requires an exploration of how they form and evolve, yet fundamental questions remain unanswered, such as how common our own solar system is within the broader population of planetary systems. Searching for hierarchical triple systems provide key insight into the multiplicity, formation, and evolution of diverse astrophysical systems. By studying hierarchical systems that span a range of mass ratios, from planetary satellites to stellar-mass companions, one can probe the unique physical processes that govern formation and dynamical evolution at each scale.</p>
+										<p>I have led several projects that combine high resolution spectroscopy with high contrast imaging to measure the radial velocities of substellar companions directly to search for exosatellites or binarity. Current instrumentation is sensitive to detecting satellites with ~1-3% the mass of its host planet and could probe gravitational instabilities as a way to create binary brown dwarfs. The next generation of high-resolution spectrographs may provide the precision necessary to perform searches for solar system-like exomoons around directly imaged planets (mass ratios of q &sim; 10<sup>-4</sup>).</p>
+										<div class="media-row">
+											<span class="image main"><img src="images/exomoon.gif" alt="Animated diagram of a star and a directly-imaged companion: first an unseen moon is revealed by the companion's subtle reflex wobble and a small Doppler shift in its spectrum, then an unseen brown dwarf is revealed by a much larger wobble and Doppler shift" /></span>
 											<div class="video-container">
-											    <iframe 
-											        src="https://www.youtube.com/embed/TakYwJGcSXE" 
+											    <iframe
+											        src="https://www.youtube.com/embed/TakYwJGcSXE"
 											        title="Exomoon Video"
 											        frameborder="0"
 											        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -90,42 +162,53 @@
 											    </iframe>
 											</div>
 										</div>
-									</div>
-								</section>
-								<section>
-									<a href="https://arxiv.org/abs/2206.04070?context=astro-ph" class="image">
-										<img src="images/onekeck.jpg" alt="" data-position="center center" />
-									</a>
+										<ul class="actions">
+											<li><a href="https://ui.adsabs.harvard.edu/search/fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3Aastronomy%20OR%20database%3Aphysics)&q=%20author%3A%22horstman%2C%20k%22%2C%20%20abs%3A%22exomoon%22&sort=date%20desc%2C%20bibcode%20desc&p_=0" class="button">Read more</a></li>
+										</ul>
+								</div>
+							</section>
+						<!-- Three -->
+							<section id="instrumentation">
+								<div class="inner">
 									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Data Reduction Pipelines (DRPs)</h3>
-											</header>
-											<p>Data Reduction Pipelines (DRPs) are an integral part of turning the raw data collected by telescopes into meaningful scientific observations. I participated in the Caltech Summer Undergraduate Research Fellowship (SURF) program and worked with Professor Dimitri Mawet on the Palomar Radial Velocity Instrument (PARVI), a diffraction limited, fiber fed, high resolution spectrograph at the Palomar Observatory. To help PARVI achieve one of its main science goals, confirming the dynamical masses of candidate planets discovered by the NASA TESS mission, I actively added to the PARVI DRP. I worked on extracting radial velocities from by forward modeling one dimensional spectra.</p>
-											<p>Tangentially, I started work on another instrumentation project with at UCLA related to the DRP for OH Suppressing InfraRed Imaging Spectrograph (OSIRIS) at the W.M. Keck Observatory. The goal of the project was to explore the signal processing method, Non-negative Matrix Factorization (NMF), to separate blended spectra produced by an integral field spectrograph. Having well separated spectra is important so astronomical objects, such as exoplanets or stars in the galactic center, are characterized by the proper flux at each discrete wavelength. I found applying NMF to calibration scan data showed reduced crosstalk, or the physical manifestation of blended spectra on the detector, of up to 26.7% ± 0.5% while not adversely impacting the signal-to-noise ratio.</p>
-                                            <p>Currently, I contribute to characterizing the wavelength solution of the Keck Imager and Characterizer (KPIC), a high contrast imaging suite attached to a high-resolution spectrograph, at the W.M. Keck Observatory (Keck).</p>
-                                            <ul class="actions">
-												<li><a href="https://arxiv.org/abs/2206.04070?context=astro-ph" class="button">Read more</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-								<section class="spotlight-stacked">
+										<header class="major">
+											<h2>Instrumentation</h2>
+										</header>
+										<p>In order to identify and characterize Earth-like planets around other stars, technological development is imperative. Astronomical instrumentation takes measurements of observables, such as photons, and translates them into meaningful science.</p>
+										<header class="major">
+											<h3>Calibration Systems</h3>
+										</header>
+										<p>Radial velocity (RV) measurements have been a foundational technique for detecting planets around other stars, beginning with the first discovery of a planet orbiting a Sun like star in 1995. To obtain precision radial velocities, spectrographs require robust calibration sources capable of producing precise wavelength solutions. Astrocombs are specialized optical frequency combs that serve as an accurate ruler for calibrating out thermomechanical drifts in astronomical spectrographs. They are designed to produce a broad, flat, uniform, resolvable spectrum of frequencies over the full bandwidth of interest.</p>
+										<p>I have worked on the integration of a custom-built, near-infrared astrocomb for a high resolution spectrograph in H-band (1.5-1.8 micron), quantifying the ability of the comb to correct thermomechanical drifts and deriving a wavelength solution using comb lines.</p>
+										<span class="image main"><img src="images/trace_extraction.gif" alt="Animated diagram of simultaneous trace extraction from science and calibration fibers on a spectrograph detector: starlight, companion light, and astrocomb calibration lines are extracted order by order, with real PHOENIX and BT-Settl model spectra and each comb line's wavelength assigned from its known 16 GHz spacing" data-position="center center" /></span>
+										<header class="major">
+											<h3>Data Reduction Pipelines (DRPs)</h3>
+										</header>
+										<p>Data Reduction Pipelines (DRPs) are an integral part of instrumentation, processing raw data and turning it into useable data products. DRPs also can account for systematics in the data, leading a lower noise floor.</p>
+										<p>I have an active role in improving instrument sensitivity through contributing to DRPs. Fringing, oscillations in the measured spectrum as a function of wavelength, dominated residuals by up to 10% of the continuum in high signal-to-noise exposures, degrading wavelength calibration, atmospheric parameter retrieval, and companion detection sensitivity below a flux ratio of 1%. I identified three distinct physical sources of fringing within KPIC and developed a physically motivated model of the underlying Fabry-Perot cavities to correct for it in post-processed data.</p>
+										<p>As an undergraduate, I participated in the Caltech Summer Undergraduate Research Fellowship (SURF) program and worked with Professor Dimitri Mawet on the Palomar Radial Velocity Instrument (PARVI), a diffraction limited, fiber fed, high resolution spectrograph at the Palomar Observatory. To help PARVI achieve one of its main science goals, confirming the dynamical masses of candidate planets discovered by the NASA TESS mission, I worked on extracting radial velocities from by forward modeling one dimensional spectra.</p>
+										<p>Tangentially, I started work on another instrumentation project with at UCLA related to the DRP for OH Suppressing InfraRed Imaging Spectrograph (OSIRIS) at the W.M. Keck Observatory. The goal of the project was to explore the signal processing method, Non-negative Matrix Factorization (NMF), to separate blended spectra produced by an integral field spectrograph. Having well separated spectra is important so astronomical objects, such as exoplanets or stars in the galactic center, are characterized by the proper flux at each discrete wavelength. I found applying NMF to calibration scan data showed reduced crosstalk, or the physical manifestation of blended spectra on the detector, while not adversely impacting the signal-to-noise ratio.</p>
+										<ul class="actions">
+											<li><a href="https://ui.adsabs.harvard.edu/search/filter_bibstem_facet_fq_bibstem_facet=OR&filter_bibstem_facet_fq_bibstem_facet=bibstem_facet%3A%22PASP%22&filter_bibstem_facet_fq_bibstem_facet=bibstem_facet%3A%22JATIS%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq=%7B!type%3Daqp%20v%3D%24fq_bibstem_facet%7D&fq_bibstem_facet=(bibstem_facet%3A%22PASP%22%20OR%20bibstem_facet%3A%22JATIS%22)&fq_database=(database%3Aastronomy%20OR%20database%3Aphysics)&q=%20%20first_author%3A%22horstman%2C%20k%22&sort=date%20desc%2C%20bibcode%20desc&p_=0" class="button">Read more</a></li>
+										</ul>
+								</div>
+							</section>
+						<!-- Four -->
+							<section id="previous-projects">
+								<div class="inner">
 									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>High Redshift Galaxy Mergers</h3>
-											</header>
-											<p>My next research project explored galaxy formation by comparing local (z~0) and high redshift (z~2) galaxies to explore our understanding of galaxy evolution and assembly. We aimed to determine whether high redshift (z~2), merging galaxies are characterized by higher star formation rates and diluted metallicities compared to non-merging galaxies because in the local universe and in cosmological simulations of galaxy formation, merging galaxies experience nuclear gas flows that both fuel star formation and dilute metallicity. To investigate this, I used existing data collected from the MOSFIRE Deep Evolution Field (MOSDEF) survey to explore trends between stellar mass, metallicity, and star formation rate. I found my analysis indicated SFR enhancement and metallicity deficit for merging systems relative to non-merging systems for a fixed stellar mass at z ~ 2, though larger samples are required to establish these preliminary results with higher statistical significance.</p>
-											<ul class="actions">
-												<li><a href="https://arxiv.org/abs/2008.04327" class="button">Read more</a></li>
-											</ul>
-										</div>
-									</div>
-									<a href="https://arxiv.org/abs/2008.04327" class="image">
-										<img src="images/galaxy_merger.gif" alt="Animation of two spiral galaxies tidally interacting into a morphologically merging pair, crossfading into the real NASA/ESA Hubble photo of the Mice Galaxies (NGC 4676) for comparison" data-position="center center" />
-									</a>
-								</section>
+										<header class="major">
+											<h2>Previous Projects</h2>
+										</header>
+										<header class="major">
+											<h3>High Redshift Galaxy Mergers</h3>
+										</header>
+										<p>Comparing local (z~0) and high redshift (z~2) galaxies allows us to explore our understanding of galaxy evolution and assembly. As an undergraduate, my project aimed to determine whether high redshift (z~2), merging galaxies are characterized by higher star formation rates and diluted metallicities compared to non-merging galaxies because in the local universe and in cosmological simulations of galaxy formation, merging galaxies experience nuclear gas flows that both fuel star formation and dilute metallicity. To investigate this, I used existing data collected from the MOSFIRE Deep Evolution Field (MOSDEF) survey to explore trends between stellar mass, metallicity, and star formation rate. I found my analysis indicated SFR enhancement and metallicity deficit for merging systems relative to non-merging systems for a fixed stellar mass at z ~ 2, though larger samples are required to establish these preliminary results with higher statistical significance.</p>
+										<span class="image main"><img src="images/galaxy_merger.gif" alt="Animation of two spiral galaxies tidally interacting into a morphologically merging pair, crossfading into the real NASA/ESA Hubble photo of the Mice Galaxies (NGC 4676) for comparison" data-position="center center" /></span>
+										<ul class="actions">
+											<li><a href="https://arxiv.org/abs/2008.04327" class="button">Read more</a></li>
+										</ul>
+								</div>
 							</section>
 					</div>
 					<!-- Footer -->

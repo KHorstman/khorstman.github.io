@@ -178,6 +178,7 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 2em 0;
+		text-align: justify;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -3058,26 +3059,6 @@ input, select, textarea {
 			}
 
 		}
-
-		/* Spotlight variant: media stacked full-width below the text,
-		   sized to match the text column's own max-width, instead of
-		   sitting in a narrow side column. */
-		.spotlights > section.spotlight-stacked {
-			-moz-flex-direction: column;
-			-webkit-flex-direction: column;
-			-ms-flex-direction: column;
-			flex-direction: column;
-		}
-
-			.spotlights > section.spotlight-stacked > .content {
-				width: 100%;
-			}
-
-			.spotlights > section.spotlight-stacked > .image {
-				width: 100%;
-				max-width: 65em;
-				margin: 0 auto;
-			}
 
 /* Header */
 

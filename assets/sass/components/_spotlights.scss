@@ -116,21 +116,4 @@
 				}
 			}
 		}
-
-		// Variant: media stacked full-width below the text, sized to
-		// match the text column's own max-width, instead of sitting
-		// in a narrow side column.
-		> section.spotlight-stacked {
-			@include vendor('flex-direction', 'column');
-
-			> .content {
-				width: 100%;
-			}
-
-			> .image {
-				width: 100%;
-				max-width: _size(inner);
-				margin: 0 auto;
-			}
-		}
 	}
