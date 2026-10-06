@@ -6,8 +6,10 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Circle, Ellipse, FancyBboxPatch, Polygon, Rectangle
 from matplotlib.colors import hsv_to_rgb, to_rgb
 
-fig, ax = plt.subplots(figsize=(15, 7.5))
-ax.set_xlim(0, 15)
+W, H = 40 / 3, 7.5                                     # 16:9, PowerPoint widescreen (inches)
+fig = plt.figure(figsize=(W, H))
+ax = fig.add_axes([0, 0, 1, 1])
+ax.set_xlim(0, W)
 ax.set_ylim(0, 7.5)
 ax.set_aspect("equal")
 ax.axis("off")
@@ -22,14 +24,14 @@ CONE = "#ffb48a"
 PANEL_FACE, PANEL_EDGE, SPEC = "#10173a", "#6d79b8", "#f6eadb"
 
 # --- Space background: soft radial gradient plus a field of stars ------------
-gx, gy = np.meshgrid(np.linspace(0, 15, 600), np.linspace(0, 7.5, 300))
-r = np.hypot((gx - 11.5) / 15, (gy - 5) / 7.5)
+gx, gy = np.meshgrid(np.linspace(0, W, 600), np.linspace(0, 7.5, 300))
+r = np.hypot((gx - 10) / W, (gy - 5) / 7.5)
 mix = np.clip(1 - r / 0.9, 0, 1)[..., None] ** 1.5
 c0 = np.array(to_rgb(BG_DARK)); c1 = np.array(to_rgb(BG_LIGHT))
-ax.imshow(c0 + (c1 - c0) * mix, extent=(0, 15, 0, 7.5), origin="lower", zorder=-10)
+ax.imshow(c0 + (c1 - c0) * mix, extent=(0, W, 0, H), origin="lower", zorder=-10)
 srng = np.random.default_rng(3)
 n_bg = 450
-sxs, sys_ = srng.uniform(0, 15, n_bg), srng.uniform(0, 7.5, n_bg)
+sxs, sys_ = srng.uniform(0, W, n_bg), srng.uniform(0, 7.5, n_bg)
 star_cols = srng.choice(["#ffffff", "#cfdcff", "#fff1d6", "#ffd9c2"], n_bg, p=[.5, .25, .15, .1])
 sizes = np.minimum(srng.pareto(2.5, n_bg) * 1.5 + 0.3, 6)
 ax.scatter(sxs, sys_, s=sizes, c=star_cols, alpha=srng.uniform(0.35, 1, n_bg), lw=0, zorder=-9)
@@ -37,8 +39,8 @@ bright = sizes > 3.5
 ax.scatter(sxs[bright], sys_[bright], s=sizes[bright] * 4, c=star_cols[bright], alpha=0.08, lw=0, zorder=-9)
 
 # --- Stars ------------------------------------------------------------------
-kx, ky, kr = 12.0, 5.2, 1.45          # K giant
-fx, fy, fr = 13.75, 3.35, 0.55        # F star
+kx, ky, kr = 10.45, 5.15, 1.45          # K giant
+fx, fy, fr = 12.15, 3.3, 0.55        # F star
 for k in range(12):                                     # layered glows
     ax.add_patch(Circle((kx, ky), kr * (1 + 0.04 * (k + 1)), color=K_GLOW, alpha=0.045, lw=0, zorder=2.5))
     ax.add_patch(Circle((fx, fy), fr * (1 + 0.08 * (k + 1)), color=F_GLOW, alpha=0.05, lw=0, zorder=3))
@@ -69,7 +71,7 @@ ax.annotate("Neptune-mass\nplanet?", xy=(px + 0.15, py + 0.3), xytext=(px + 0.5,
             ha="center", fontsize=12, color=TEXT, arrowprops=dict(arrowstyle="-", color=LINE, lw=1))
 
 # --- Spectrum panel -----------------------------------------------------------
-bx0, by0, bw, bh = 0.4, 0.4, 7.2, 4.6
+bx0, by0, bw, bh = 0.45, 0.45, 6.9, 4.6
 # Light "pyramid" from the K giant to the panel (as in the lux diagram)
 apex = (kx - 0.9, ky - 0.25)
 corners = [(bx0, by0 + bh), (bx0 + bw, by0 + bh), (bx0 + bw, by0), (bx0, by0)]
@@ -137,5 +139,5 @@ for x, h, c in zip(tx, env, cols):
     ax.plot([x, x], [ry1, ry1 + h * ch], color=c, lw=3.5, solid_capstyle="round", zorder=5)
 
 out = __file__.replace("scripts/kgiant_spectrum.py", "images/kgiant_spectrum.png")
-fig.savefig(out, dpi=200, bbox_inches="tight", pad_inches=0, facecolor=BG_DARK)
+fig.savefig(out, dpi=144, facecolor=BG_DARK)             # 1920 x 1080 px
 print("saved", out)
