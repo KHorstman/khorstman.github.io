@@ -53,25 +53,29 @@ for c in corners:
 
 ax.add_patch(Rectangle((bx0, by0), bw, bh, facecolor="white", edgecolor="#444", lw=1.5, zorder=2))
 
-# Synthetic K-giant spectrum: blackbody-ish continuum plus absorption lines
+# Approximate H-band spectrum of the K giant (shape traced from the data/model comparison)
 rng = np.random.default_rng(7)
-wl = np.linspace(400, 700, 3000)                        # nm, blue -> red
-cont = 0.55 + 0.4 * (wl - 400) / 300                     # cool star: brighter toward red
-flux = cont.copy()
-lines = rng.uniform(402, 698, 70)
-depths = rng.uniform(0.08, 0.35, 70)
-widths = rng.uniform(0.4, 1.4, 70)
-for l, d, w in zip(lines, depths, widths):
-    flux *= 1 - d * np.exp(-0.5 * ((wl - l) / w) ** 2)
-for l, d, w in [(430.8, 0.5, 1.5), (486.1, 0.45, 1.8), (517.0, 0.5, 1.6), (589.3, 0.55, 1.2), (656.3, 0.5, 1.6)]:
-    flux *= 1 - d * np.exp(-0.5 * ((wl - l) / w) ** 2)  # G band, Hβ, Mg b, Na D, Hα
+w0, w1 = 1.6432, 1.6657                                   # microns
+wl = np.linspace(w0, w1, 4000)
+knots_w = [1.6432, 1.646, 1.648, 1.650, 1.6535, 1.656, 1.658, 1.660, 1.6625, 1.6657]
+knots_f = [7000, 8300, 9500, 10300, 10500, 10200, 8800, 7400, 6200, 4800]
+flux = np.polyval(np.polyfit(knots_w, knots_f, 4), wl)    # smooth continuum (blaze-like hump)
+strong = [(1.6433, .12), (1.6438, .20), (1.6443, .40), (1.6450, .40), (1.6459, .15), (1.6469, .38),
+          (1.6473, .12), (1.6484, .30), (1.6487, .15), (1.6490, .25), (1.6498, .25), (1.6502, .20),
+          (1.6511, .20), (1.6519, .12), (1.6534, .20), (1.6555, .10), (1.6566, .10), (1.6574, .15),
+          (1.6586, .25), (1.6592, .25), (1.6596, .20), (1.6600, .40), (1.6605, .15), (1.6611, .12),
+          (1.6618, .12), (1.6625, .15), (1.6634, .45), (1.6637, .15), (1.6643, .12), (1.6650, .10)]
+weak = [(l, d) for l, d in zip(rng.uniform(w0, w1, 90), rng.uniform(0.02, 0.08, 90))]
+for l, d in strong + weak:
+    flux *= 1 - d * np.exp(-0.5 * ((wl - l) / 0.00006) ** 2)
+flux += rng.normal(0, 60, wl.size)                       # a little noise, like real data
 
 sx0, sx1 = bx0 + 0.35, bx0 + bw - 0.35
 sy0, sy1 = by0 + 1.4, by0 + bh - 0.3
-xs = sx0 + (wl - 400) / 300 * (sx1 - sx0)
+xs = sx0 + (wl - w0) / (w1 - w0) * (sx1 - sx0)
 ys = sy0 + (flux - flux.min()) / (flux.max() - flux.min()) * (sy1 - sy0)
-ax.plot(xs, ys, color="black", lw=1.6, zorder=3)
-ax.text(bx0 + bw / 2, by0 + bh + 0.12, "Spectrum of the K giant", ha="center", va="bottom", fontsize=14, weight="bold")
+ax.plot(xs, ys, color="black", lw=1.0, zorder=3)
+ax.text(bx0 + bw / 2, by0 + bh + 0.12, "H-band spectrum of the K giant", ha="center", va="bottom", fontsize=14, weight="bold")
 
 # Rainbow ruler underneath (violet on the left to red on the right, matching wavelength)
 rx0, ry0, rw, rh = sx0, by0 + 0.3, sx1 - sx0, 0.55
@@ -85,8 +89,8 @@ im.set_clip_path(ruler)
 for i, x in enumerate(np.linspace(rx0 + 0.08, rx0 + rw - 0.08, 61)):
     tick = 0.22 if i % 10 == 0 else (0.15 if i % 5 == 0 else 0.09)
     ax.plot([x, x], [ry0 + rh, ry0 + rh - tick], color="#222", lw=0.8, zorder=6)
-ax.text(rx0, ry0 - 0.08, "shorter λ", ha="left", va="top", fontsize=10)
-ax.text(rx0 + rw, ry0 - 0.08, "longer λ", ha="right", va="top", fontsize=10)
+ax.text(rx0, ry0 - 0.08, f"{w0:.3f} µm", ha="left", va="top", fontsize=10)
+ax.text(rx0 + rw, ry0 - 0.08, f"{w1:.3f} µm", ha="right", va="top", fontsize=10)
 
 out = __file__.replace("scripts/kgiant_spectrum.py", "images/kgiant_spectrum.png")
 fig.savefig(out, dpi=200, bbox_inches="tight", facecolor="white")
