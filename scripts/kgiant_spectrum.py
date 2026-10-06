@@ -2,7 +2,7 @@
 Neptune-mass planet) next to an F star, with a wavelength "ruler" below."""
 import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib.patches import Circle, Ellipse, FancyBboxPatch, Polygon, Rectangle
+from matplotlib.patches import Circle, Ellipse, Polygon, Rectangle
 from matplotlib.colors import hsv_to_rgb
 
 fig, ax = plt.subplots(figsize=(15, 7.5))
@@ -71,26 +71,22 @@ for l, d in strong + weak:
 flux += rng.normal(0, 60, wl.size)                       # a little noise, like real data
 
 sx0, sx1 = bx0 + 0.35, bx0 + bw - 0.35
-sy0, sy1 = by0 + 1.4, by0 + bh - 0.3
+sy0, sy1 = by0 + 1.55, by0 + bh - 0.3
 xs = sx0 + (wl - w0) / (w1 - w0) * (sx1 - sx0)
 ys = sy0 + (flux - flux.min()) / (flux.max() - flux.min()) * (sy1 - sy0)
 ax.plot(xs, ys, color="black", lw=1.0, zorder=3)
-ax.text(bx0 + bw / 2, by0 + bh + 0.12, "H-band spectrum of the K giant", ha="center", va="bottom", fontsize=14, weight="bold")
 
-# Rainbow ruler underneath (violet on the left to red on the right, matching wavelength)
-rx0, ry0, rw, rh = sx0, by0 + 0.3, sx1 - sx0, 0.55
-hues = np.linspace(0.80, 0.0, 512)                       # violet -> red
-grad = hsv_to_rgb(np.stack([hues, np.full_like(hues, 0.85), np.ones_like(hues)], axis=-1))[None, :, :]
-ruler = FancyBboxPatch((rx0, ry0), rw, rh, boxstyle="round,pad=0,rounding_size=0.12",
-                       facecolor="none", edgecolor="#333", lw=1.2, zorder=5)
-ax.add_patch(ruler)
-im = ax.imshow(grad, extent=(rx0, rx0 + rw, ry0, ry0 + rh), aspect="auto", zorder=4)
-im.set_clip_path(ruler)
-for i, x in enumerate(np.linspace(rx0 + 0.08, rx0 + rw - 0.08, 61)):
-    tick = 0.22 if i % 10 == 0 else (0.15 if i % 5 == 0 else 0.09)
-    ax.plot([x, x], [ry0 + rh, ry0 + rh - tick], color="#222", lw=0.8, zorder=6)
-ax.text(rx0, ry0 - 0.08, f"{w0:.3f} µm", ha="left", va="top", fontsize=10)
-ax.text(rx0 + rw, ry0 - 0.08, f"{w1:.3f} µm", ha="right", va="top", fontsize=10)
+# Laser frequency comb underneath: evenly spaced lines, rainbow-coloured, under a smooth envelope
+cx0, cx1, cy0, ch = sx0, sx1, by0 + 0.3, 0.95
+ax.plot([cx0 - 0.1, cx1 + 0.1], [cy0, cy0], color="#555", lw=1.2, zorder=4)
+n_teeth = 34
+tx = np.linspace(cx0 + 0.1, cx1 - 0.1, n_teeth)
+u = np.linspace(0, 1, n_teeth)
+env = 0.12 + 0.88 * np.exp(-0.5 * ((u - 0.55) / 0.24) ** 2)
+hues = np.linspace(0.80, 0.0, n_teeth)                   # violet -> red
+cols = hsv_to_rgb(np.stack([hues, np.full_like(hues, 0.85), np.full_like(hues, 0.9)], axis=-1))
+for x, h, c in zip(tx, env, cols):
+    ax.plot([x, x], [cy0, cy0 + h * ch], color=c, lw=4, solid_capstyle="round", zorder=5)
 
 out = __file__.replace("scripts/kgiant_spectrum.py", "images/kgiant_spectrum.png")
 fig.savefig(out, dpi=200, bbox_inches="tight", facecolor="white")
