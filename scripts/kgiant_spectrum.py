@@ -3,7 +3,7 @@ Neptune-mass planet) next to an F star, with a laser frequency comb below,
 on a space-themed background."""
 import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib.patches import Circle, Ellipse, Polygon, Rectangle
+from matplotlib.patches import Circle, Ellipse, FancyBboxPatch, Polygon, Rectangle
 from matplotlib.colors import hsv_to_rgb, to_rgb
 
 fig, ax = plt.subplots(figsize=(15, 7.5))
@@ -103,18 +103,38 @@ xs = sx0 + (wl - w0) / (w1 - w0) * (sx1 - sx0)
 ys = sy0 + (flux - flux.min()) / (flux.max() - flux.min()) * (sy1 - sy0)
 ax.plot(xs, ys, color=SPEC, lw=1.0, zorder=3)
 
-# Laser frequency comb underneath: evenly spaced lines, rainbow-coloured, under a smooth envelope
-cx0, cx1, cy0, ch = sx0, sx1, by0 + 0.3, 0.95
-ax.plot([cx0 - 0.1, cx1 + 0.1], [cy0, cy0], color=LINE, lw=1.2, zorder=4)
+# Laser frequency comb that doubles as a ruler: the comb teeth rise from a ruler body,
+# each tooth lining up with a major tick, with minor ticks in between
 n_teeth = 34
-tx = np.linspace(cx0 + 0.1, cx1 - 0.1, n_teeth)
-u = np.linspace(0, 1, n_teeth)
-env = 0.12 + 0.88 * np.exp(-0.5 * ((u - 0.55) / 0.24) ** 2)
+tx = np.linspace(sx0 + 0.1, sx1 - 0.1, n_teeth)
+step = tx[1] - tx[0]
+rx0, rx1 = tx[0] - step / 2, tx[-1] + step / 2
+ry0, rh = by0 + 0.18, 0.4                                 # ruler body
+ry1 = ry0 + rh
 hues = np.linspace(0.80, 0.0, n_teeth)                   # violet -> red
 cols = hsv_to_rgb(np.stack([hues, np.full_like(hues, 0.55), np.ones_like(hues)], axis=-1))
+
+body = FancyBboxPatch((rx0, ry0), rx1 - rx0, rh, boxstyle="round,pad=0,rounding_size=0.08",
+                      facecolor="none", edgecolor=PANEL_EDGE, lw=1.3, zorder=6)
+ax.add_patch(body)
+grad_h = np.linspace(0.80, 0.0, 512)
+grad = hsv_to_rgb(np.stack([grad_h, np.full_like(grad_h, 0.55), np.ones_like(grad_h)], axis=-1))[None]
+im = ax.imshow(grad, extent=(rx0, rx1, ry0, ry1), aspect="auto", alpha=0.45, zorder=4)
+im.set_clip_path(body)
+ax.plot([rx0 + 0.05, rx1 - 0.05], [ry1 - 0.02, ry1 - 0.02], color="white", alpha=0.25, lw=1, zorder=5)  # glassy edge
+
+for i, x in enumerate(np.linspace(rx0 + step / 2, rx1 - step / 2, 5 * (n_teeth - 1) + 1)):
+    major = i % 5 == 0
+    tick = 0.24 if major else (0.15 if i % 5 == 2 or i % 5 == 3 else 0.1)
+    ax.plot([x, x], [ry1, ry1 - tick], color=TEXT, alpha=0.85 if major else 0.55,
+            lw=1.1 if major else 0.7, zorder=6)
+
+u = np.linspace(0, 1, n_teeth)
+env = 0.12 + 0.88 * np.exp(-0.5 * ((u - 0.55) / 0.24) ** 2)
+ch = 0.85
 for x, h, c in zip(tx, env, cols):
-    ax.plot([x, x], [cy0, cy0 + h * ch], color=c, lw=9, alpha=0.18, solid_capstyle="round", zorder=5)
-    ax.plot([x, x], [cy0, cy0 + h * ch], color=c, lw=3.5, solid_capstyle="round", zorder=5)
+    ax.plot([x, x], [ry1, ry1 + h * ch], color=c, lw=9, alpha=0.18, solid_capstyle="round", zorder=5)
+    ax.plot([x, x], [ry1, ry1 + h * ch], color=c, lw=3.5, solid_capstyle="round", zorder=5)
 
 out = __file__.replace("scripts/kgiant_spectrum.py", "images/kgiant_spectrum.png")
 fig.savefig(out, dpi=200, bbox_inches="tight", pad_inches=0, facecolor=BG_DARK)
