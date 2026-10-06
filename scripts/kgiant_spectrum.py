@@ -1,9 +1,10 @@
 """Schematic: observing the spectrum of a K giant (with a candidate
-Neptune-mass planet) next to an F star, with a wavelength "ruler" below."""
+Neptune-mass planet) next to an F star, with a laser frequency comb below,
+on a space-themed background."""
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.patches import Circle, Ellipse, Polygon, Rectangle
-from matplotlib.colors import hsv_to_rgb
+from matplotlib.colors import hsv_to_rgb, to_rgb
 
 fig, ax = plt.subplots(figsize=(15, 7.5))
 ax.set_xlim(0, 15)
@@ -11,15 +12,41 @@ ax.set_ylim(0, 7.5)
 ax.set_aspect("equal")
 ax.axis("off")
 
+# --- Palette ------------------------------------------------------------------
+BG_DARK, BG_LIGHT = "#070b1f", "#1c2452"
+TEXT, LINE = "#e6e9ff", "#8f9bd0"
+K_FACE, K_EDGE, K_GLOW = "#ef7a45", "#ffb48a", "#ff9a5c"
+F_FACE, F_EDGE, F_GLOW = "#fff3da", "#fffaf0", "#ffe9b8"
+P_FACE, P_EDGE = "#5c86e6", "#b7caff"
+CONE = "#ffb48a"
+PANEL_FACE, PANEL_EDGE, SPEC = "#10173a", "#6d79b8", "#f6eadb"
+
+# --- Space background: soft radial gradient plus a field of stars ------------
+gx, gy = np.meshgrid(np.linspace(0, 15, 600), np.linspace(0, 7.5, 300))
+r = np.hypot((gx - 11.5) / 15, (gy - 5) / 7.5)
+mix = np.clip(1 - r / 0.9, 0, 1)[..., None] ** 1.5
+c0 = np.array(to_rgb(BG_DARK)); c1 = np.array(to_rgb(BG_LIGHT))
+ax.imshow(c0 + (c1 - c0) * mix, extent=(0, 15, 0, 7.5), origin="lower", zorder=-10)
+srng = np.random.default_rng(3)
+n_bg = 450
+sxs, sys_ = srng.uniform(0, 15, n_bg), srng.uniform(0, 7.5, n_bg)
+star_cols = srng.choice(["#ffffff", "#cfdcff", "#fff1d6", "#ffd9c2"], n_bg, p=[.5, .25, .15, .1])
+sizes = np.minimum(srng.pareto(2.5, n_bg) * 1.5 + 0.3, 6)
+ax.scatter(sxs, sys_, s=sizes, c=star_cols, alpha=srng.uniform(0.35, 1, n_bg), lw=0, zorder=-9)
+bright = sizes > 3.5
+ax.scatter(sxs[bright], sys_[bright], s=sizes[bright] * 4, c=star_cols[bright], alpha=0.08, lw=0, zorder=-9)
+
 # --- Stars ------------------------------------------------------------------
 kx, ky, kr = 12.0, 5.2, 1.45          # K giant
 fx, fy, fr = 13.75, 3.35, 0.55        # F star
-ax.add_patch(Circle((kx, ky), kr * 1.08, color="#e0662a", alpha=0.25, lw=0))
-ax.add_patch(Circle((kx, ky), kr, facecolor="#d9531e", edgecolor="#5a2a10", lw=1.5, zorder=3))
-ax.add_patch(Circle((fx, fy), fr * 1.15, color="#fff4c9", alpha=0.6, lw=0, zorder=3))
-ax.add_patch(Circle((fx, fy), fr, facecolor="#fff2bf", edgecolor="#555", lw=1.2, zorder=4))
-ax.text(kx, ky - kr - 0.35, "K giant", ha="center", va="top", fontsize=15, weight="bold")
-ax.text(fx, fy - fr - 0.2, "F star", ha="center", va="top", fontsize=13, weight="bold")
+for k in range(12):                                     # layered glows
+    ax.add_patch(Circle((kx, ky), kr * (1 + 0.04 * (k + 1)), color=K_GLOW, alpha=0.045, lw=0, zorder=2.5))
+    ax.add_patch(Circle((fx, fy), fr * (1 + 0.08 * (k + 1)), color=F_GLOW, alpha=0.05, lw=0, zorder=3))
+ax.add_patch(Circle((kx, ky), kr, facecolor=K_FACE, edgecolor=K_EDGE, lw=1.5, zorder=3))
+ax.add_patch(Circle((kx - 0.25, ky + 0.25), kr * 0.7, color="#ffa36b", alpha=0.35, lw=0, zorder=3))
+ax.add_patch(Circle((fx, fy), fr, facecolor=F_FACE, edgecolor=F_EDGE, lw=1.2, zorder=4))
+ax.text(kx, ky - kr - 0.35, "K giant", ha="center", va="top", fontsize=15, weight="bold", color=TEXT)
+ax.text(fx, fy - fr - 0.2, "F star", ha="center", va="top", fontsize=13, weight="bold", color=TEXT)
 
 # Orbit of the planet (tilted ellipse); back half behind the star, front half in front
 orb_w, orb_h, tilt = 4.3, 1.0, 12
@@ -29,29 +56,29 @@ oy = orb_h / 2 * np.sin(theta)
 t = np.deg2rad(tilt)
 rx, ry = kx + ox * np.cos(t) - oy * np.sin(t), ky + ox * np.sin(t) + oy * np.cos(t)
 back = np.sin(theta) > 0
-ax.plot(np.where(back, rx, np.nan), np.where(back, ry, np.nan), color="#444", lw=1.2, ls="--", zorder=2)
-ax.plot(np.where(~back, rx, np.nan), np.where(~back, ry, np.nan), color="#444", lw=1.2, ls="--", zorder=5)
+ax.plot(np.where(back, rx, np.nan), np.where(back, ry, np.nan), color=LINE, lw=1.2, ls="--", zorder=2)
+ax.plot(np.where(~back, rx, np.nan), np.where(~back, ry, np.nan), color=LINE, lw=1.2, ls="--", zorder=5)
 
 # Neptune-mass planet with a question mark
 pa = np.deg2rad(305)
 px = kx + orb_w / 2 * np.cos(pa) * np.cos(t) - orb_h / 2 * np.sin(pa) * np.sin(t)
 py = ky + orb_w / 2 * np.cos(pa) * np.sin(t) + orb_h / 2 * np.sin(pa) * np.cos(t)
-ax.add_patch(Circle((px, py), 0.33, facecolor="#3d6fd6", edgecolor="#1b2f66", lw=1.5, zorder=6))
+ax.add_patch(Circle((px, py), 0.33, facecolor=P_FACE, edgecolor=P_EDGE, lw=1.5, zorder=6))
 ax.text(px, py - 0.02, "?", ha="center", va="center", fontsize=20, weight="bold", color="white", zorder=7)
-ax.annotate("Neptune-mass\nplanet?", xy=(px + 0.15, py + 0.3), xytext=(px + 0.9, py + 1.75),
-            ha="center", fontsize=12, arrowprops=dict(arrowstyle="-", color="#444", lw=1))
+ax.annotate("Neptune-mass\nplanet?", xy=(px + 0.15, py + 0.3), xytext=(px + 0.5, py + 1.75),
+            ha="center", fontsize=12, color=TEXT, arrowprops=dict(arrowstyle="-", color=LINE, lw=1))
 
 # --- Spectrum panel -----------------------------------------------------------
 bx0, by0, bw, bh = 0.4, 0.4, 7.2, 4.6
 # Light "pyramid" from the K giant to the panel (as in the lux diagram)
 apex = (kx - 0.9, ky - 0.25)
 corners = [(bx0, by0 + bh), (bx0 + bw, by0 + bh), (bx0 + bw, by0), (bx0, by0)]
-ax.add_patch(Polygon([apex, corners[0], corners[1]], color="#f6c88f", alpha=0.25, lw=0, zorder=0))
-ax.add_patch(Polygon([apex, corners[1], corners[2]], color="#f6c88f", alpha=0.45, lw=0, zorder=0))
+ax.add_patch(Polygon([apex, corners[0], corners[1]], color=CONE, alpha=0.08, lw=0, zorder=0))
+ax.add_patch(Polygon([apex, corners[1], corners[2]], color=CONE, alpha=0.15, lw=0, zorder=0))
 for c in corners:
-    ax.plot([apex[0], c[0]], [apex[1], c[1]], ls=":", color="#555", lw=1.2, zorder=1)
+    ax.plot([apex[0], c[0]], [apex[1], c[1]], ls=":", color=LINE, lw=1.2, zorder=1)
 
-ax.add_patch(Rectangle((bx0, by0), bw, bh, facecolor="white", edgecolor="#444", lw=1.5, zorder=2))
+ax.add_patch(Rectangle((bx0, by0), bw, bh, facecolor=PANEL_FACE, edgecolor=PANEL_EDGE, lw=1.5, zorder=2))
 
 # Approximate H-band spectrum of the K giant (shape traced from the data/model comparison)
 rng = np.random.default_rng(7)
@@ -74,20 +101,21 @@ sx0, sx1 = bx0 + 0.35, bx0 + bw - 0.35
 sy0, sy1 = by0 + 1.55, by0 + bh - 0.3
 xs = sx0 + (wl - w0) / (w1 - w0) * (sx1 - sx0)
 ys = sy0 + (flux - flux.min()) / (flux.max() - flux.min()) * (sy1 - sy0)
-ax.plot(xs, ys, color="black", lw=1.0, zorder=3)
+ax.plot(xs, ys, color=SPEC, lw=1.0, zorder=3)
 
 # Laser frequency comb underneath: evenly spaced lines, rainbow-coloured, under a smooth envelope
 cx0, cx1, cy0, ch = sx0, sx1, by0 + 0.3, 0.95
-ax.plot([cx0 - 0.1, cx1 + 0.1], [cy0, cy0], color="#555", lw=1.2, zorder=4)
+ax.plot([cx0 - 0.1, cx1 + 0.1], [cy0, cy0], color=LINE, lw=1.2, zorder=4)
 n_teeth = 34
 tx = np.linspace(cx0 + 0.1, cx1 - 0.1, n_teeth)
 u = np.linspace(0, 1, n_teeth)
 env = 0.12 + 0.88 * np.exp(-0.5 * ((u - 0.55) / 0.24) ** 2)
 hues = np.linspace(0.80, 0.0, n_teeth)                   # violet -> red
-cols = hsv_to_rgb(np.stack([hues, np.full_like(hues, 0.85), np.full_like(hues, 0.9)], axis=-1))
+cols = hsv_to_rgb(np.stack([hues, np.full_like(hues, 0.55), np.ones_like(hues)], axis=-1))
 for x, h, c in zip(tx, env, cols):
-    ax.plot([x, x], [cy0, cy0 + h * ch], color=c, lw=4, solid_capstyle="round", zorder=5)
+    ax.plot([x, x], [cy0, cy0 + h * ch], color=c, lw=9, alpha=0.18, solid_capstyle="round", zorder=5)
+    ax.plot([x, x], [cy0, cy0 + h * ch], color=c, lw=3.5, solid_capstyle="round", zorder=5)
 
 out = __file__.replace("scripts/kgiant_spectrum.py", "images/kgiant_spectrum.png")
-fig.savefig(out, dpi=200, bbox_inches="tight", facecolor="white")
+fig.savefig(out, dpi=200, bbox_inches="tight", pad_inches=0, facecolor=BG_DARK)
 print("saved", out)
